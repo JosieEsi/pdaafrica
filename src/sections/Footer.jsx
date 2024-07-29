@@ -1,5 +1,12 @@
+import { footerLinks, socialMedia } from "../constants";
+import { pdaLogo } from "../assets/images";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className="max-container">
+      <div></div>
+    </footer>
+  );
 };
 
 export default Footer;

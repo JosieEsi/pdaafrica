@@ -1,13 +1,17 @@
+import LargeButton from "../components/LargeButton";
+
 const Videos = () => {
   return (
-    <section
-      id="videos"
-      className="flex items-center justify-center max-container"
-    >
-      <div className="w-2/3 bg-white h-[400px] grid rounded-2xl">
+    <section id="videos" className="flex max-container ">
+      <div className=" bg-white w-full flex flex-row justify-between">
         <h3 className="font-poppins font-bold text-3xl text-black pb-4">
           Videos
         </h3>
+        <div className="flex justify-end">
+          <a href="">
+            <LargeButton label="MORE VIDEOS" />
+          </a>
+        </div>
       </div>
     </section>
   );
