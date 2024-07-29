@@ -1,6 +1,6 @@
 import { pdf } from "../assets/icons";
 import Button from "../components/Button";
-import LargeButton from "../components/LargeButton";
+import Tab from "../components/Tab";
 
 const Publications = () => {
   return (
@@ -61,7 +61,7 @@ const Publications = () => {
 
         <div className="flex justify-center">
           <a href="./">
-            <LargeButton label="MORE PUBLICATIONS" />
+            <Tab label="MORE PUBLICATIONS" />
           </a>
         </div>
       </div>

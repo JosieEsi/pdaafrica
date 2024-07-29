@@ -1,4 +1,4 @@
-import LargeButton from "../components/LargeButton";
+import Tab from "../components/Tab";
 
 const Videos = () => {
   return (
@@ -9,7 +9,7 @@ const Videos = () => {
         </h3>
         <div className="flex justify-end">
           <a href="">
-            <LargeButton label="MORE VIDEOS" />
+            <Tab label="MORE VIDEOS" />
           </a>
         </div>
       </div>
