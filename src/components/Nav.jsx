@@ -1,5 +1,5 @@
 import { pdaLogo } from "../assets/images";
-import { hamburger } from "../assets/icons";
+import { menu } from "../assets/icons";
 import { navLinks } from "../constants";
 
 const Nav = () => {
@@ -17,7 +17,7 @@ const Nav = () => {
           />
         </a>
         <div>
-          <img src={hamburger} alt="Menu" width={25} height={25} />
+          <img src={menu} alt="Menu" width={35} height={35} />
         </div>
       </nav>
     </header>

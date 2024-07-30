@@ -1,6 +1,7 @@
 import { pdf } from "../assets/icons";
 import Button from "../components/Button";
 import Tab from "../components/Tab";
+import { paper } from "../assets/icons";
 
 const Publications = () => {
   return (
@@ -13,7 +14,13 @@ const Publications = () => {
           Publications
         </h3>
         <div className="flex text-xl max-sm:text-sm justify-items-center justify-evenly ">
-          <img src={pdf} alt="" width={70} height={100} />
+          <img
+            className="max-sm:w-14 max-sm:h-14"
+            src={paper}
+            alt="pdf"
+            width={70}
+            height={100}
+          />
           <div className="lg:w-[600px] md:w-[400px] max-sm:w-[200px]">
             <span className="font-semibold items-center flex">
               Business Formalization in Ghana's Construction Industry
@@ -28,7 +35,13 @@ const Publications = () => {
           </a>
         </div>
         <div className="flex text-xl max-sm:text-sm justify-items-center justify-evenly ">
-          <img src={pdf} alt="" width={70} height={100} />
+          <img
+            className="max-sm:w-14 max-sm:h-14"
+            src={paper}
+            alt=""
+            width={70}
+            height={100}
+          />
           <div className="lg:w-[600px] md:w-[400px] max-sm:w-[200px]">
             <span className="font-semibold items-center flex">
               Understanding Vulnerability and Exclusion in Ghana November 2022
@@ -43,7 +56,13 @@ const Publications = () => {
           </a>
         </div>
         <div className="flex text-xl max-sm:text-sm justify-items-center justify-evenly ">
-          <img src={pdf} alt="" width={70} height={100} />
+          <img
+            className="max-sm:w-14 max-sm:h-14"
+            src={paper}
+            alt=""
+            width={70}
+            height={100}
+          />
           <div className="lg:w-[600px] md:w-[400px] max-sm:w-[200px]">
             <span className="font-semibold items-center flex">
               Voices and Evidence from End-Users of the GLTV and GLRRP Remote

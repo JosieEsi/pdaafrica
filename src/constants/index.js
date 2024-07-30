@@ -60,6 +60,19 @@ export const socialMedia = [
 
 export const footerLinks = [
   {
+    title: "Contact Us",
+    links: [
+      { name: "+233 (0)208129622", link: "tel:+233208129622" },
+      {
+        name: "+233 (0)302 252998 / 2970177",
+        link: "tel:+233302252998, tel:+2333022970177",
+      },
+      { name: "Email:", link: "mailto:info@pdaghana.com" },
+      { name: "info@pdaghana.com", link: "mailto:info@pdaghana.com" },
+    ],
+  },
+
+  {
     title: "Quick Links",
     links: [
       { name: "Ethical Review Committee", link: "/" },
@@ -96,19 +109,6 @@ export const footerLinks = [
       { name: "Impact Stories", link: "/" },
       { name: "Documentaries", link: "/" },
       { name: "Case Studies", link: "/" },
-    ],
-  },
-
-  {
-    title: "Contact Us",
-    links: [
-      { name: "+233 (0)208129622", link: "tel:+233208129622" },
-      {
-        name: "+233 (0)302 252998 / 2970177",
-        link: "tel:+233302252998, tel:+2333022970177",
-      },
-      { name: "Email:", link: "mailto:info@pdaghana.com" },
-      { name: "info@pdaghana.com", link: "mailto:info@pdaghana.com" },
     ],
   },
 ];

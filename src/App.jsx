@@ -39,7 +39,7 @@ const App = () => {
       <section className="padding">
         <Partners />
       </section>
-      <section className="bg-zinc-500 padding">
+      <section className="bg-zinc-600 padding">
         <Footer />
       </section>
     </main>
