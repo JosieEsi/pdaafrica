@@ -35,10 +35,17 @@ const Hero = () => {
     <section
       id="home"
       className="relative flex flex-col justify-end lg:justify-center min-h-screen bg-cover bg-left"
-      style={{
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url('src/assets/images/hero.svg')`,
-      }}
+      // style={{
+      //   backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url('src/assets/images/hero.svg')`,
+      // }}
     >
+      <video
+        src="/assets/video/pdaSlider.mp4"
+        loop
+        autoPlay
+        muted
+        className="object-cover absolute h-screen w-screen -z-10 top-0 left-0"
+      ></video>
       <div className="lg:grid lg:grid-cols-2 lg:px-2 xl:grid xl:grid-cols-2 xl:px-2 sm:flex sm:flex-col sm:justify-end sm:h-full p-4">
         <div></div>
         <div className="p-5 max-sm:pb-10 text-white">
