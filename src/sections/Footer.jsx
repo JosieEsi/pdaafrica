@@ -1,14 +1,13 @@
-import { footerLinks, socialMedia } from "../constants";
+import { footerLinks, whiteMedia } from "../constants";
 import { footerlogo } from "../assets/images";
 
 const Footer = () => {
   return (
-    <footer className="max-container min-h-full">
-      {/* <div className="flex flex-wrap "> */}
+    <footer className="max-container min-h-full ">
       <div className="flex flex-row justify-between">
-        <img src={footerlogo} alt="logo" width={150} height={40} />
-        <div className="flex gap-5">
-          {socialMedia.map((icon) => (
+        <img src={footerlogo} alt="logo" width={120} height={40} />
+        <div className="flex gap-5 flii">
+          {whiteMedia.map((icon) => (
             <div className="flex" key={icon.alt}>
               <img src={icon.src} alt={icon.alt} width={24} height={24} />
             </div>
@@ -36,7 +35,6 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      {/* </div> */}
 
       <div className="bg-white h-1 w-full mt-20"></div>
       <div className="flex mt-10 justify-end">

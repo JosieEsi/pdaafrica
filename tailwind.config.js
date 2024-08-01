@@ -12,12 +12,13 @@ export default {
       "3xl": ["28px", "50px"],
       "4xl": ["48px", "58px"],
       "6xl": ["55px", "65px"],
-      "8xl": ["96px", "106px"],
+      "8xl": ["76px", "86px"],
     },
     extend: {
       colors: {
         orange: "#F89A23",
         red: "#F75123",
+        ash: "#393636",
       },
 
       fontFamily: {

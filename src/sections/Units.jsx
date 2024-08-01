@@ -8,54 +8,46 @@ const Units = () => {
   return (
     <section
       id="units"
-      className="max-container flex items-center justify-center p-4 border-box min-h-sreen"
+      className="max-container flex items-center justify-center p-4 border-box "
     >
-      <div className="bg-white flex rounded-2xl flex-row w-full justify-between">
-        <div className="bg-gray-200 rounded-3xl w-full">
-          <h3 className="font-poppins font-bold text-3xl text-black pt-5 pb-5 pl-10">
+      <div className="bg-white flex rounded-2xl flex-row w-full justify-between flex-wrap flex-1">
+        <div className="bg-gray-200 rounded-3xl w-full p-5">
+          <h3 className="font-poppins font-bold text-3xl text-ash pb-5">
             Our Units
           </h3>
-
-          <div className="pl-10 col-span-2 pb-5 grid grid-cols-2 max-sm:grid-cols-1  xl:grid-cols-4">
-            <div className="w-[250px] h-[150px] bg-red relative shadow-3xl mb-5">
-              <div className="flex justify-center mt-3">
-                <img src={globe} alt="africa" />
-              </div>
-              <div className="w-[250px] h-[20px] bg-white absolute bottom-0 font-poppins text-xs flex items-center justify-center font-semibold">
+          <div className="grid grid-cols-2 max-sm:grid-cols-1 xl:grid-cols-4 gap-4">
+            <div className="w-full h-[150px] bg-red relative shadow-lg flex flex-col items-center justify-center">
+              <img src={globe} alt="africa" className="h-20 w-20" />
+              <div className="w-full bg-white absolute bottom-0 text-center py-2 font-poppins text-xs font-semibold">
                 <p>PDA Africa</p>
               </div>
             </div>
-
-            <div className="w-[250px] h-[150px] bg-red relative shadow-3xl mb-5">
-              <div className="flex justify-center mt-4">
-                <img src={research} alt="REL" />
-              </div>
-              <div className="w-[250px] h-[20px] bg-white absolute bottom-0 font-poppins text-xs flex items-center justify-center font-semibold ">
-                <p>PDA Research, Evaluation and Learning</p>
+            <div className="w-full h-[150px] bg-red relative shadow-lg flex flex-col items-center justify-center">
+              <img src={research} alt="REL" className="h-20 w-20" />
+              <div className="w-full bg-white absolute bottom-0 text-center py-2 font-poppins text-xs font-semibold">
+                <p>PDA Research, Evaluation & Learning</p>
               </div>
             </div>
-
-            <div className="w-[250px] h-[150px] bg-orange relative shadow-3xl mb-5">
-              <div className="flex justify-center mt-6">
-                <img src={signal} alt="ACU" />
-              </div>
-              <div className="w-[250px] h-[20px] bg-white absolute bottom-0 font-poppins text-xs flex items-center justify-center font-semibold">
+            <div className="w-full h-[150px] bg-orange relative shadow-lg flex flex-col items-center justify-center">
+              <img src={signal} alt="ACU" className="h-20 w-20" />
+              <div className="w-full bg-white absolute bottom-0 text-center py-2 font-poppins text-xs font-semibold">
                 <p>PDA Communications & Advocacy</p>
               </div>
             </div>
-
-            <div className="w-[250px] h-[150px] bg-orange relative shadow-3xl mb-5">
-              <div className="flex justify-center mt-6">
-                <img src={finance} alt="F&A" />
-              </div>
-              <div className="w-[250px] h-[20px] bg-white absolute bottom-0 font-poppins text-xs flex items-center justify-center font-semibold">
+            <div className="w-full h-[150px] bg-orange relative shadow-lg flex flex-col items-center justify-center">
+              <img src={finance} alt="F&A" className="h-20 w-20" />
+              <div className="w-full bg-white absolute bottom-0 text-center py-2 font-poppins text-xs font-semibold">
                 <p>PDA Finance & Administration</p>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className="h-[450px]">
-          <img src={image1} alt="" width={250} />
+        {/* <div className="w-1/3 flex justify-center items-center">
+          <img
+            src={image1}
+            alt="Units Image"
+            className="object-cover w-full h-auto rounded-3xl"
+          />
         </div> */}
       </div>
     </section>

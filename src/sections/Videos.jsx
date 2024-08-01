@@ -5,9 +5,9 @@ import { video2 } from "../assets/images";
 const Videos = () => {
   return (
     <section id="videos" className="flex max-container w-full">
-      <div className=" bg-white w-full  justify-between ">
-        <div className="flex justify-between">
-          <h3 className="font-poppins font-bold text-3xl text-black pb-4">
+      <div className=" bg-white w-full justify-between ">
+        <div className="flex justify-between ml-10">
+          <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
             Videos
           </h3>
 

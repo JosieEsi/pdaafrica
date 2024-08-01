@@ -1,4 +1,13 @@
-import { facebook, youtube, twitter, linkedin } from "../assets/icons";
+import {
+  facebook,
+  youtube,
+  twitter,
+  linkedin,
+  whiteYoutube,
+  whiteFacebook,
+  whiteLinkedin,
+  whiteTwitter,
+} from "../assets/icons";
 
 export const navLinks = [
   { href: "#home", label: "Home" },
@@ -7,7 +16,9 @@ export const navLinks = [
   { href: "#covid-19", label: "COVID 19" },
   { href: "#partners", label: "Partners" },
   { href: "#events", label: "Events" },
+];
 
+export const navigation = [
   {
     title: "Who we are",
     links: [
@@ -47,8 +58,6 @@ export const navLinks = [
       { name: "Case Studies", link: "/" },
     ],
   },
-
-  { href: "#contact-us", label: "Contact us" },
 ];
 
 export const socialMedia = [
@@ -56,6 +65,13 @@ export const socialMedia = [
   { src: facebook, alt: "facebook logo" },
   { src: linkedin, alt: "linkedin logo" },
   { src: twitter, alt: "twitter logo" },
+];
+
+export const whiteMedia = [
+  { src: whiteYoutube, alt: "youtube logo" },
+  { src: whiteFacebook, alt: "facebook logo" },
+  { src: whiteLinkedin, alt: "linkedin logo" },
+  { src: whiteTwitter, alt: "twitter logo" },
 ];
 
 export const footerLinks = [

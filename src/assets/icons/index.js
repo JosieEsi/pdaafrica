@@ -14,6 +14,11 @@ import finance from "./finance.svg";
 import globe from "./globe.svg";
 import signal from "./signal.svg";
 
+import whiteLinkedin from "./square-linkedin.svg";
+import whiteFacebook from "./square-facebook.svg";
+import whiteTwitter from "./square-x-twitter.svg";
+import whiteYoutube from "./square-youtube.svg";
+
 export {
   arrowLeft,
   arrowRight,
@@ -30,4 +35,8 @@ export {
   finance,
   globe,
   signal,
+  whiteLinkedin,
+  whiteFacebook,
+  whiteTwitter,
+  whiteYoutube,
 };

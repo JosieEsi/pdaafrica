@@ -10,11 +10,13 @@ import {
   Footer,
 } from "./sections";
 import Nav from "./components/Nav";
+import Menu from "./components/Menu";
 
 const App = () => {
   return (
     <main className="relative">
       <Nav />
+      {/* <Menu /> */}
       <section>
         <Hero />
       </section>
@@ -39,7 +41,7 @@ const App = () => {
       <section className="padding">
         <Partners />
       </section>
-      <section className="bg-zinc-600 padding">
+      <section className="bg-[#525050] padding">
         <Footer />
       </section>
     </main>
