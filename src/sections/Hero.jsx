@@ -44,6 +44,7 @@ const Hero = () => {
         loop
         autoPlay
         muted
+        playsInline
         className="absolute inset-0 w-full h-full object-cover -z-10 "
       ></video>
       <div className="lg:grid lg:grid-cols-2 lg:px-2 xl:grid xl:grid-cols-2 xl:px-2 sm:flex sm:flex-col sm:justify-end sm:h-full p-4">
