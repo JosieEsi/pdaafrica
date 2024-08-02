@@ -40,13 +40,15 @@ const Hero = () => {
       // }}
     >
       <video
-        src="/assets/video/pdaSlider.mp4"
         loop
         autoPlay
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover -z-10 "
-      ></video>
+      >
+        <source src="/assets/video/pdaSlider.mp4" type="video/mp4" />
+        <source src="/assets/video/pdaSlider.webm" type="video/webm" />
+      </video>
       <div className="lg:grid lg:grid-cols-2 lg:px-2 xl:grid xl:grid-cols-2 xl:px-2 sm:flex sm:flex-col sm:justify-end sm:h-full p-4">
         <div></div>
         <div className="p-5 max-sm:pb-10 text-white">
