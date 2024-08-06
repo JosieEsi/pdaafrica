@@ -61,17 +61,45 @@ export const navigation = [
 ];
 
 export const socialMedia = [
-  { src: youtube, alt: "youtube logo" },
-  { src: facebook, alt: "facebook logo" },
-  { src: linkedin, alt: "linkedin logo" },
-  { src: twitter, alt: "twitter logo" },
+  {
+    src: youtube,
+    alt: "youtube logo",
+    link: "https://www.youtube.com/@pdatv3656",
+  },
+  {
+    src: facebook,
+    alt: "facebook logo",
+    link: "https://www.facebook.com/p/PDA-GHANA-100063665496444/",
+  },
+  {
+    src: linkedin,
+    alt: "linkedin logo",
+    link: "https://www.linkedin.com/company/pdaghana/",
+  },
+  { src: twitter, alt: "twitter logo", link: "https://x.com/pdaghofficial" },
 ];
 
 export const whiteMedia = [
-  { src: whiteYoutube, alt: "youtube logo" },
-  { src: whiteFacebook, alt: "facebook logo" },
-  { src: whiteLinkedin, alt: "linkedin logo" },
-  { src: whiteTwitter, alt: "twitter logo" },
+  {
+    src: whiteYoutube,
+    alt: "youtube logo",
+    link: "https://www.youtube.com/@pdatv3656",
+  },
+  {
+    src: whiteFacebook,
+    alt: "facebook logo",
+    link: "https://www.facebook.com/p/PDA-GHANA-100063665496444/",
+  },
+  {
+    src: whiteLinkedin,
+    alt: "linkedin logo",
+    link: "https://www.linkedin.com/company/pdaghana/",
+  },
+  {
+    src: whiteTwitter,
+    alt: "twitter logo",
+    link: "https://x.com/pdaghofficial",
+  },
 ];
 
 export const footerLinks = [

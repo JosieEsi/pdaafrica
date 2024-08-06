@@ -94,12 +94,15 @@ import { paper } from "../assets/icons";
 
 const Publications = () => {
   return (
-    <section id="units" className="max-container flex font-poppins">
-      <div className="bg-white h-auto grid rounded-3xl w-full p-6">
+    <section
+      id="units"
+      className="max-container flex lg:justify-center font-poppins"
+    >
+      <div className="bg-white h-auto grid rounded-3xl w-full lg:w-2/3 p-6">
         <h3 className="font-poppins font-bold text-3xl text-ash mb-6">
           Publications
         </h3>
-        <div className="space-y-6">
+        <div className="space-y-6 lg:space-y-10">
           <div className="flex items-center text-xl max-sm:text-sm justify-between space-x-4">
             <img
               className="w-16 h-16 max-sm:w-12 max-sm:h-12"

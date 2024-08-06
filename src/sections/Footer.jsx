@@ -9,7 +9,9 @@ const Footer = () => {
         <div className="flex gap-5 flii">
           {whiteMedia.map((icon) => (
             <div className="flex" key={icon.alt}>
-              <img src={icon.src} alt={icon.alt} width={24} height={24} />
+              <a href={icon.link} target="_blank" rel="noopener noreferrer">
+                <img src={icon.src} alt={icon.alt} width={24} height={24} />
+              </a>
             </div>
           ))}
         </div>

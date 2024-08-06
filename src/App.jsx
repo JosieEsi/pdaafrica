@@ -16,7 +16,6 @@ const App = () => {
   return (
     <main className="relative">
       <Nav />
-      {/* <Menu /> */}
       <section>
         <Hero />
       </section>

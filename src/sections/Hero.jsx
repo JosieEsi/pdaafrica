@@ -44,7 +44,8 @@ const Hero = () => {
         autoPlay
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover -z-10 "
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+        poster="/assets/images/hero.svg"
       >
         <source src="/assets/video/pdaSlider.mp4" type="video/mp4" />
         <source src="/assets/video/pdaSlider.webm" type="video/webm" />

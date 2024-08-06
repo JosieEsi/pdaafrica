@@ -19,23 +19,27 @@ const Nav = () => {
             className="pt-3 pb-3"
             src={pdaLogo}
             alt="Logo"
-            width={120}
-            height={20}
+            width={150}
+            height={40}
           />
         </a>
         <div>
           <img
             src={menu}
             alt="Menu"
-            width={35}
-            height={35}
+            width={50}
+            height={50}
             onClick={toggleMenu}
             className="cursor-pointer"
           />
         </div>
       </nav>
       {isMenuVisible && (
-        <div className="absolute top-30 left-0 w-full bg-white z-50">
+        <div
+          className={`absolute left-0 w-full bg-white bg-opacity-35 transition-all duration-300 ease-in-out ${
+            isMenuVisible ? "top-24 opacity-100" : "top-[-500px] opacity-0"
+          }`}
+        >
           <Menu />
         </div>
       )}

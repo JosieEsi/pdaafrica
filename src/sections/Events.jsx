@@ -1,8 +1,18 @@
+import React, { useEffect } from "react";
+
 const Events = () => {
+  useEffect(() => {
+    // Load Twitter's embed script
+    const script = document.createElement("script");
+    script.src = "https://platform.twitter.com/widgets.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <section
       id="events"
-      className="max-container items-center justify-center flex max-sm:flex-col lg:px-10 "
+      className="max-container items-center justify-center flex max-sm:flex-col lg:px-32 "
     >
       <div className="flex flex-1 flex-col max-sm:pb-10 justify-center items-center">
         <h3 className="font-poppins font-bold text-3xl text-red ">
@@ -56,10 +66,24 @@ const Events = () => {
       </div>
 
       <div className="flex-1 flex justify-center items-center ">
-        <div className="h-[300px] w-[250px] bg-black border-solid rounded-3xl">
-          <div className="w-[250px] h-10 pt-2 pl-2 bg-yellow-50 flex justify-start rounded-tr-2xl rounded-tl-2xl">
+        <div className="h-[350px] w-[300px] bg-black border-solid rounded-3xl">
+          <div className="w-[300px] h-10 pt-2 pl-2 bg-yellow-50 flex justify-start rounded-tr-2xl rounded-tl-2xl">
             <p>Tweets from @pdaghanaofficial</p>
           </div>
+          <a
+            class="twitter-timeline"
+            data-width="295"
+            data-height="300"
+            data-theme="dark"
+            href="https://twitter.com/pdaghofficial?ref_src=twsrc%5Etfw"
+          >
+            Tweets by pdaghofficial
+          </a>{" "}
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
         </div>
       </div>
     </section>

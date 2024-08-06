@@ -7,7 +7,7 @@ import Button from "./Button";
 const Menu = () => {
   return (
     <section className="max-container flex flex-row justify-between p-10 flex-wrap">
-      <div className="flex flex-col text-red gap-10 ml-10 font-semibold text-xl font-poppins">
+      <div className="flex flex-col text-red gap-10 ml-10 font-semibold text-xl font-poppins   ">
         {navLinks.map((section) => (
           <a key={section.label} href={section.href}>
             {section.label}
@@ -16,7 +16,9 @@ const Menu = () => {
         <div className="flex gap-5 mt-5">
           {socialMedia.map((icon) => (
             <div className="flex" key={icon.alt}>
-              <img src={icon.src} alt={icon.alt} width={24} height={24} />
+              <a href={icon.link} target="_blank" rel="noopener noreferrer">
+                <img src={icon.src} alt={icon.alt} width={24} height={24} />
+              </a>
             </div>
           ))}
         </div>
