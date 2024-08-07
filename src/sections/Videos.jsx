@@ -40,7 +40,7 @@ const Videos = () => {
           {videos.map((video) => (
             <iframe
               key={video.id.videoId}
-              width="400"
+              width="350"
               height="250"
               src={`https://www.youtube.com/embed/${video.id.videoId}`}
               title={video.snippet.title}
