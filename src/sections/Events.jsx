@@ -71,7 +71,7 @@ const Events = () => {
             <p>Tweets from @pdaghanaofficial</p>
           </div>
           <a
-            class="twitter-timeline"
+            className="twitter-timeline"
             data-width="295"
             data-height="300"
             data-theme="dark"
@@ -82,7 +82,7 @@ const Events = () => {
           <script
             async
             src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
+            charSet="utf-8"
           ></script>
         </div>
       </div>

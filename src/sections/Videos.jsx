@@ -27,7 +27,7 @@ const Videos = () => {
   return (
     <section id="videos" className="flex max-container w-2/3 justify-center">
       <div className=" bg-white w-full justify-between ">
-        <div className="flex justify-between ml-10 max-sm:ml-0">
+        <div className="flex justify-between ml-10 max-sm:ml-0 max-sm:gap-7 ">
           <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
             Videos
           </h3>
@@ -40,14 +40,13 @@ const Videos = () => {
           {videos.map((video) => (
             <iframe
               key={video.id.videoId}
-              width="350"
+              width="400"
               height="250"
               src={`https://www.youtube.com/embed/${video.id.videoId}`}
               title={video.snippet.title}
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           ))}
         </div>

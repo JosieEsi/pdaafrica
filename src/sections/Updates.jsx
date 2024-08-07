@@ -8,7 +8,7 @@ const Updates = () => {
       id="updates"
       className="max-container flex items-center justify-center lg:min-h-screen md:h-2/3"
     >
-      <div className="bg-white flex flex-col  p-5 shadow-lg w-2/3 ">
+      <div className="bg-white flex flex-col  p-5 shadow-lg w-2/3">
         <h3 className="font-poppins font-bold text-3xl text-ash pb-4 pl-5 max-sm:pl-1">
           UPDATES
         </h3>

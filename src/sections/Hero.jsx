@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex flex-col justify-end lg:justify-center min-h-screen bg-cover bg-left"
+      className="relative flex flex-col justify-end lg:justify-center min-h-screen bg-cover bg-left top-20 z-10"
       // style={{
       //   backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url('src/assets/images/hero.svg')`,
       // }}
