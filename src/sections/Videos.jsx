@@ -3,6 +3,7 @@ import Tab from "../components/Tab";
 
 const Videos = () => {
   const [videos, setVideos] = useState([]);
+  const [error, setError] = useState(null); // New state to track errors
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -15,9 +16,14 @@ const Videos = () => {
           `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${maxResults}`
         );
         const data = await response.json();
-        setVideos(data.items);
+        if (data.items) {
+          setVideos(data.items);
+        } else {
+          setError("No videos found.");
+        }
       } catch (error) {
         console.error("Error fetching YouTube videos:", error);
+        setError("Failed to fetch videos.");
       }
     };
 
