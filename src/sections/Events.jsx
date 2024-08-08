@@ -82,7 +82,7 @@ const Events = () => {
           <script
             async
             src="https://platform.twitter.com/widgets.js"
-            charSet="utf-8"
+            charset="utf-8"
           ></script>
         </div>
       </div>

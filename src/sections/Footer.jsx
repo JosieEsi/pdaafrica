@@ -1,5 +1,5 @@
 import { footerLinks, whiteMedia } from "../constants";
-import { footerlogo } from "../assets/images";
+import { footerlogo, line } from "../assets/images";
 
 const Footer = () => {
   return (
@@ -16,7 +16,10 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="bg-white h-1 w-full mt-10"></div>
+      {/* <div className="bg-white h-1 w-full mt-10"></div> */}
+      <div>
+        <img src={line} alt="line" className="w-full mt-10" />
+      </div>
 
       <div className="flex flex-1 justify-between gap-10 mt-10 flex-wrap">
         {footerLinks.map((section) => (
@@ -38,7 +41,10 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className="bg-white h-1 w-full mt-20"></div>
+      <div>
+        <img src={line} alt="line" className="w-full mt-10" />
+      </div>
+
       <div className="flex mt-10 justify-end">
         <p className="font-poppins text-sm text-white">
           Copyright 2024. All rights reserved.

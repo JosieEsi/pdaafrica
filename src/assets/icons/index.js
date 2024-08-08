@@ -1,6 +1,7 @@
 import arrowLeft from "./caret-left-solid.svg";
 import arrowRight from "./caret-right-solid.svg";
 import hamburger from "./hamburger.svg";
+import close from "./close.svg";
 import linkedin from "./linkedin-brands-solid.svg";
 import search from "./magnifying-glass-solid.svg";
 import facebook from "./square-facebook-brands-solid.svg";
@@ -23,6 +24,7 @@ export {
   arrowLeft,
   arrowRight,
   hamburger,
+  close,
   linkedin,
   search,
   facebook,

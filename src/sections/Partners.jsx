@@ -33,7 +33,7 @@ const Partners = () => {
   return (
     <section
       id="partners"
-      className="flex max-container flex-col w-2/3 justify-center overflow-hidden"
+      className="flex max-container flex-col lg:w-2/3 max-sm:w-full md:full justify-center overflow-hidden"
     >
       <div className="bg-white flex ml-10 max-sm:ml-0">
         <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
@@ -41,7 +41,7 @@ const Partners = () => {
         </h3>
       </div>
 
-      <div className="flex overflow-hidden space-x-10 group ">
+      <div className="flex overflow-hidden space-x-10 group md:ml:10">
         <div className="flex animate-loop-scroll space-x-10 group-hover:paused ">
           <img src={beyond} alt="" className="w-20 h-20" />
           <img src={british} alt="" className="w-20 h-20" />

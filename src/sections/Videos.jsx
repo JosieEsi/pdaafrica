@@ -25,7 +25,10 @@ const Videos = () => {
   }, []);
 
   return (
-    <section id="videos" className="flex max-container w-2/3 justify-center">
+    <section
+      id="videos"
+      className="flex max-container justify-center lg:w-2/3  md:full"
+    >
       <div className=" bg-white w-full justify-between ">
         <div className="flex justify-between ml-10 max-sm:ml-0 max-sm:gap-7 ">
           <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
@@ -36,7 +39,7 @@ const Videos = () => {
             <Tab label="MORE VIDEOS" />
           </a>
         </div>
-        <div className="flex flex-row gap-5 justify-center mt-10 flex-wrap">
+        <div className="flex flex-row gap-5 justify-center mt-10 flex-wrap ">
           {videos.map((video) => (
             <iframe
               key={video.id.videoId}

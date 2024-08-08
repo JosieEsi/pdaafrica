@@ -59,4 +59,19 @@
   .paused {
     animation-play-state: paused;
   }
+
+  .slide-in {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .slide-out {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .slide-in,
+  .slide-out {
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+  }
 }

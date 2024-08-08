@@ -5,7 +5,7 @@ const Work = () => {
   return (
     <section
       id="work"
-      className="max-container items-center justify-between gap-10 w-full flex max-sm:flex-col"
+      className="max-container items-center justify-between gap-10 w-full flex max-sm:flex-col mt-10 max-sm:mt-20"
     >
       <div className="flex-1 flex justify-center items-center">
         <img
