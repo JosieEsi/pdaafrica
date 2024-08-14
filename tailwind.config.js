@@ -35,15 +35,6 @@ export default {
       screens: {
         wide: "1440px",
       },
-      // keyframes: {
-      //   scroll: {
-      //     "0%": { transform: "translateX(100%)" },
-      //     "100%": { transform: "translateX(-100%)" },
-      //   },
-      // },
-      // animation: {
-      //   scroll: "scroll 10s linear infinite",
-      // },
 
       animation: {
         "loop-scroll": "loop-scroll 60s linear infinite",
@@ -51,7 +42,7 @@ export default {
       keyframes: {
         "loop-scroll": {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-200%)" },
+          to: { transform: "translateX(-100%)" },
         },
       },
     },

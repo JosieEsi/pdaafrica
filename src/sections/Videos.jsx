@@ -31,11 +31,8 @@ const Videos = () => {
   }, []);
 
   return (
-    <section
-      id="videos"
-      className="flex max-container justify-center lg:w-2/3  md:full"
-    >
-      <div className=" bg-white w-full justify-between ">
+    <section id="videos" className="flex max-container lg:justify-center ">
+      <div className=" bg-white w-full lg:w-2/3  ">
         <div className="flex justify-between ml-10 max-sm:ml-0 max-sm:gap-7 ">
           <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
             Videos

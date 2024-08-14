@@ -6,7 +6,7 @@ const Updates = () => {
   return (
     <section
       id="updates"
-      className="max-container flex items-center justify-center lg:min-h-screen md:h-2/3 "
+      className="max-container flex items-center justify-center  "
     >
       <div className="bg-white flex flex-col  p-5 shadow-lg lg:w-2/3 max-sm:w-full md:full">
         <h3 className="font-poppins font-bold text-3xl text-ash pb-4 pl-5 max-sm:pl-1">

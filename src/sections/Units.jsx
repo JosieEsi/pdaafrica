@@ -66,9 +66,10 @@ const Units = () => {
   return (
     <section
       id="units"
-      className="max-container flex items-center justify-center p-4 border-box min-h-screen md:p-2"
+      className="max-container flex items-center justify-center p-4 border-box md:p-2"
     >
       <div className="bg-white flex rounded-2xl flex-row lg:w-2/3 justify-between flex-wrap max-sm:grid max-sm:grid-rows-1 max-sm:w-full md:w-full">
+        <div></div>
         <div className="bg-gray-200 rounded-3xl w-1/2 p-5 h-[400px] mt-10 max-sm:w-full">
           <h3 className="font-poppins font-bold text-3xl text-ash pb-5">
             Our Units

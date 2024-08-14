@@ -1,5 +1,5 @@
-// import { partners } from "../constants";
 // import PartnersCard from "../components/PartnersCard";
+
 import {
   beyond,
   british,
@@ -29,81 +29,240 @@ import {
   university,
 } from "../assets/images";
 
+// const Partners = () => {
+//   return (
+//     <section
+//       id="partners"
+//       className="flex max-container overflow-hidden justify-center"
+//     >
+//       <div className=" bg-white w-full lg:w-2/3  max-sm:w-full flex flex-col justify-center">
+//         <div className="bg-white ml-10 max-sm:ml-0 justify-center ">
+//           <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
+//             Partners
+//           </h3>
+//         </div>
+
+//         <div className="flex overflow-hidden group justify-center">
+//           <div className="flex animate-loop-scroll space-x-10 group-hover:paused relative">
+//             <img src={beyond} alt="" className="w-20 h-20" />
+//             <img src={british} alt="" className="w-20 h-20" />
+//             <img src={callund} alt="" className="w-20 h-20" />
+//             <img src={cdd} alt="" className="w-20 h-20" />
+//             <img src={cocoa} alt="" className="w-20 h-20" />
+//             <img src={coram} alt="" className="w-20 h-20" />
+//             <img src={edtech} alt="" className="w-20 h-20" />
+//             <img src={euro} alt="" className="w-20 h-20" />
+//             <img src={slaves} alt="" className="w-20 h-20" />
+//             <img src={gain} alt="" className="w-20 h-20" />
+//             <img src={initial} alt="" className="w-20 h-20" />
+//             <img src={ipsos} alt="" className="w-20 h-20" />
+//             <img src={institute} alt="" className="w-20 h-20" />
+//             <img src={kokoo} alt="" className="w-20 h-20" />
+//             <img src={mastercard} alt="" className="w-20 h-20" />
+//             <img src={opm} alt="" className="w-20 h-20" />
+//             <img src={pandemics} alt="" className="w-20 h-20" />
+//             <img src={root} alt="" className="w-20 h-20" />
+//             <img src={sabre} alt="" className="w-20 h-20" />
+//             <img src={schol} alt="" className="w-20 h-20" />
+//             <img src={star} alt="" className="w-20 h-20" />
+//             <img src={sustainable} alt="" className="w-20 h-20" />
+//             <img src={tonys} alt="" className="w-20 h-20" />
+//             <img src={tzedek} alt="" className="w-20 h-20" />
+//             <img src={unicef} alt="" className="w-20 h-20" />
+//             <img src={university} alt="" className="w-20 h-20" />
+//           </div>
+
+//           <div className=" flex animate-loop-scroll space-x-10 group-hover:paused ">
+//             <img src={beyond} alt="" className="w-20 h-20" />
+//             <img src={british} alt="" className="w-20 h-20" />
+//             <img src={callund} alt="" className="w-20 h-20" />
+//             <img src={cdd} alt="" className="w-20 h-20" />
+//             <img src={cocoa} alt="" className="w-20 h-20" />
+//             <img src={coram} alt="" className="w-20 h-20" />
+//             <img src={edtech} alt="" className="w-20 h-20" />
+//             <img src={euro} alt="" className="w-20 h-20" />
+//             <img src={slaves} alt="" className="w-20 h-20" />
+//             <img src={gain} alt="" className="w-20 h-20" />
+//             <img src={initial} alt="" className="w-20 h-20" />
+//             <img src={ipsos} alt="" className="w-20 h-20" />
+//             <img src={institute} alt="" className="w-20 h-20" />
+//             <img src={kokoo} alt="" className="w-20 h-20" />
+//             <img src={mastercard} alt="" className="w-20 h-20" />
+//             <img src={opm} alt="" className="w-20 h-20" />
+//             <img src={pandemics} alt="" className="w-20 h-20" />
+//             <img src={root} alt="" className="w-20 h-20" />
+//             <img src={sabre} alt="" className="w-20 h-20" />
+//             <img src={schol} alt="" className="w-20 h-20" />
+//             <img src={star} alt="" className="w-20 h-20" />
+//             <img src={sustainable} alt="" className="w-20 h-20" />
+//             <img src={tonys} alt="" className="w-20 h-20" />
+//             <img src={tzedek} alt="" className="w-20 h-20" />
+//             <img src={unicef} alt="" className="w-20 h-20" />
+//             <img src={university} alt="" className="w-20 h-20" />
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Partners;
+
+// import { partners } from "../constants";
+import React from "react";
+
 const Partners = () => {
+  const partners = [
+    { imgURL: beyond, name: "Beyond" },
+    { imgURL: british, name: "British" },
+    { imgURL: callund, name: "Callund" },
+    { imgURL: cdd, name: "CDD" },
+    { imgURL: cocoa, name: "Cocoa" },
+    { imgURL: coram, name: "Coram" },
+    { imgURL: edtech, name: "EdTech" },
+    { imgURL: euro, name: "Euro" },
+    { imgURL: slaves, name: "Slaves" },
+    { imgURL: gain, name: "gAIN" },
+    { imgURL: initial, name: "Initial" },
+    { imgURL: institute, name: "Institute" },
+    { imgURL: ipsos, name: "IPSOS" },
+    { imgURL: kokoo, name: "Kokoo" },
+    { imgURL: mastercard, name: "Mastercard" },
+    { imgURL: opm, name: "OPM" },
+    { imgURL: pandemics, name: "Pandemics" },
+    { imgURL: root, name: "Root" },
+    { imgURL: sabre, name: "Sabre" },
+    { imgURL: schol, name: "Schol" },
+    { imgURL: star, name: "Star" },
+    { imgURL: sustainable, name: "Sustainable" },
+    { imgURL: tonys, name: "Tonys" },
+    { imgURL: tzedek, name: "Tzedek" },
+    { imgURL: unicef, name: "Unicef" },
+    { imgURL: university, name: "University" },
+  ];
+
   return (
     <section
       id="partners"
-      className="flex max-container flex-col lg:w-2/3 max-sm:w-full md:full justify-center overflow-hidden"
+      className="flex max-container overflow-hidden justify-center"
     >
-      <div className="bg-white flex ml-10 max-sm:ml-0">
-        <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
-          Partners
-        </h3>
-      </div>
-
-      <div className="flex overflow-hidden space-x-10 group md:ml:10">
-        <div className="flex animate-loop-scroll space-x-10 group-hover:paused ">
-          <img src={beyond} alt="" className="w-20 h-20" />
-          <img src={british} alt="" className="w-20 h-20" />
-          <img src={callund} alt="" className="w-20 h-20" />
-          <img src={cdd} alt="" className="w-20 h-20" />
-          <img src={cocoa} alt="" className="w-20 h-20" />
-          <img src={coram} alt="" className="w-20 h-20" />
-          <img src={edtech} alt="" className="w-20 h-20" />
-          <img src={euro} alt="" className="w-20 h-20" />
-          <img src={slaves} alt="" className="w-20 h-20" />
-          <img src={gain} alt="" className="w-20 h-20" />
-          <img src={initial} alt="" className="w-20 h-20" />
-          <img src={ipsos} alt="" className="w-20 h-20" />
-          <img src={institute} alt="" className="w-20 h-20" />
-          <img src={kokoo} alt="" className="w-20 h-20" />
-          <img src={mastercard} alt="" className="w-20 h-20" />
-          <img src={opm} alt="" className="w-20 h-20" />
-          <img src={pandemics} alt="" className="w-20 h-20" />
-          <img src={root} alt="" className="w-20 h-20" />
-          <img src={sabre} alt="" className="w-20 h-20" />
-          <img src={schol} alt="" className="w-20 h-20" />
-          <img src={star} alt="" className="w-20 h-20" />
-          <img src={sustainable} alt="" className="w-20 h-20" />
-          <img src={tonys} alt="" className="w-20 h-20" />
-          <img src={tzedek} alt="" className="w-20 h-20" />
-          <img src={unicef} alt="" className="w-20 h-20" />
-          <img src={university} alt="" className="w-20 h-20" />
+      <div className="bg-white w-full lg:w-2/3 max-sm:w-full flex flex-col justify-center">
+        <div className="bg-white ml-10 max-sm:ml-0 justify-center">
+          <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
+            Partners
+          </h3>
         </div>
-        {/* <div
-          className="flex animate-loop-scroll  space-x-10 group-hover:paused "
-          aria-hidden="true"
-        >
-          <img src={beyond} alt="" className="w-20 h-20" />
-          <img src={british} alt="" className="w-20 h-20" />
-          <img src={callund} alt="" className="w-20 h-20" />
-          <img src={cdd} alt="" className="w-20 h-20" />
-          <img src={cocoa} alt="" className="w-20 h-20" />
-          <img src={coram} alt="" className="w-20 h-20" />
-          <img src={edtech} alt="" className="w-20 h-20" />
-          <img src={euro} alt="" className="w-20 h-20" />
-          <img src={slaves} alt="" className="w-20 h-20" />
-          <img src={gain} alt="" className="w-20 h-20" />
-          <img src={initial} alt="" className="w-20 h-20" />
-          <img src={ipsos} alt="" className="w-20 h-20" />
-          <img src={institute} alt="" className="w-20 h-20" />
-          <img src={kokoo} alt="" className="w-20 h-20" />
-          <img src={mastercard} alt="" className="w-20 h-20" />
-          <img src={opm} alt="" className="w-20 h-20" />
-          <img src={pandemics} alt="" className="w-20 h-20" />
-          <img src={root} alt="" className="w-20 h-20" />
-          <img src={sabre} alt="" className="w-20 h-20" />
-          <img src={schol} alt="" className="w-20 h-20" />
-          <img src={star} alt="" className="w-20 h-20" />
-          <img src={sustainable} alt="" className="w-20 h-20" />
-          <img src={tonys} alt="" className="w-20 h-20" />
-          <img src={tzedek} alt="" className="w-20 h-20" />
-          <img src={unicef} alt="" className="w-20 h-20" />
-          <img src={university} alt="" className="w-20 h-20" />
-        </div> */}
+
+        <div className="flex overflow-hidden group justify-center">
+          <div className="flex animate-loop-scroll space-x-10 group-hover:paused relative">
+            {partners.map((partner, index) => (
+              <img
+                key={index}
+                src={partner.imgURL}
+                alt={partner.name}
+                className="w-20 h-20"
+              />
+            ))}
+            {partners.map((partner, index) => (
+              <img
+                key={index + partners.length}
+                src={partner.imgURL}
+                alt={partner.name}
+                className="w-20 h-20"
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default Partners;
+
+// import React, { useState, useEffect } from "react";
+
+// const Partners = () => {
+//   const partners = [
+//     { imgURL: beyond, name: "Beyond" },
+//     { imgURL: british, name: "British" },
+//     { imgURL: callund, name: "Callund" },
+//     { imgURL: cdd, name: "CDD" },
+//     { imgURL: cocoa, name: "Cocoa" },
+//     { imgURL: coram, name: "Coram" },
+//     { imgURL: edtech, name: "EdTech" },
+//     { imgURL: euro, name: "Euro" },
+//     { imgURL: slaves, name: "Slaves" },
+//     { imgURL: gain, name: "gAIN" },
+//     { imgURL: initial, name: "Initial" },
+//     { imgURL: institute, name: "Institute" },
+//     { imgURL: ipsos, name: "IPSOS" },
+//     { imgURL: kokoo, name: "Kokoo" },
+//     { imgURL: mastercard, name: "Mastercard" },
+//     { imgURL: opm, name: "OPM" },
+//     { imgURL: pandemics, name: "Pandemics" },
+//     { imgURL: root, name: "Root" },
+//     { imgURL: sabre, name: "Sabre" },
+//     { imgURL: schol, name: "Schol" },
+//     { imgURL: star, name: "Star" },
+//     { imgURL: sustainable, name: "Sustainable" },
+//     { imgURL: tonys, name: "Tonys" },
+//     { imgURL: tzedek, name: "Tzedek" },
+//     { imgURL: unicef, name: "Unicef" },
+//     { imgURL: university, name: "University" },
+//   ];
+
+//   const [scrollPosition, setScrollPosition] = useState(0);
+//   const [PartnersList, setPartnersList] = useState([...partners, ...partners]);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const scrollableDiv = document.getElementById("scrollable-div");
+//       const scrollWidth = scrollableDiv.scrollWidth;
+//       const clientWidth = scrollableDiv.clientWidth;
+//       const maxScrollPosition = scrollWidth - clientWidth;
+
+//       if (scrollPosition >= maxScrollPosition / 2) {
+//         setScrollPosition(0);
+//       } else {
+//         setScrollPosition(scrollPosition + 1);
+//       }
+//     };
+
+//     const intervalId = setInterval(handleScroll, 16); // 16ms = 60fps
+
+//     return () => clearInterval(intervalId);
+//   }, [scrollPosition]);
+
+//   return (
+//     <section
+//       id="partners"
+//       className="flex max-container overflow-hidden justify-center"
+//     >
+//       <div className="bg-white w-full lg:w-2/3 max-sm:w-full flex flex-col justify-center">
+//         <div className="bg-white ml-10 max-sm:ml-0 justify-center">
+//           <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
+//             Partners
+//           </h3>
+//         </div>
+
+//         <div
+//           id="scrollable-div"
+//           className="flex overflow-hidden group justify-center"
+//           style={{ transform: `translateX(-${scrollPosition}px)` }}
+//         >
+//           {PartnersList.map((partner, index) => (
+//             <img
+//               key={index}
+//               src={partner.imgURL}
+//               alt={partner.name}
+//               className="w-20 h-20"
+//             />
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Partners;
