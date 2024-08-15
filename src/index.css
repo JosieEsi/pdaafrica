@@ -17,10 +17,6 @@
     max-width: 1440px;
     margin: 0 auto;
   }
-
-  /* .input {
-    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
-  } */
 }
 
 @layer utilities {
@@ -85,11 +81,11 @@
   }
 
   .spinner {
-    @apply transition-all duration-300 box-border absolute w-full h-[3px] bg-black;
+    @apply transition-all duration-700 box-border absolute w-full h-[3px] bg-black;
   }
 
   .horizontal {
-    @apply mt-[3px] relative;
+    @apply mt-[10px] relative;
   }
 
   .diagonal.part-1 {
@@ -97,7 +93,7 @@
   }
 
   .diagonal.part-2 {
-    @apply mt-[3px] relative;
+    @apply mt-[10px] relative;
   }
 
   input[type="checkbox"]:checked~.sidebarIconToggle>.horizontal {
@@ -105,10 +101,32 @@
   }
 
   input[type="checkbox"]:checked~.sidebarIconToggle>.diagonal.part-1 {
-    @apply transform rotate-[135deg] mt-[8px];
+    @apply transform rotate-[135deg] mt-[10px];
   }
 
   input[type="checkbox"]:checked~.sidebarIconToggle>.diagonal.part-2 {
-    @apply transform rotate-[-135deg] mt-[-9px];
+    @apply transform rotate-[-135deg] mt-[-15px];
   }
+
+
+  @keyframes loop-scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-loop-scroll {
+    display: flex;
+    animation: loop-scroll 60s linear infinite;
+
+  }
+
+  .group-hover\:paused:hover {
+    animation-play-state: paused;
+  }
+
 }

@@ -249,14 +249,17 @@ const Nav = () => {
           ></input>
           <label
             for="openSidebarMenu"
-            className="sidebarIconToggle cursor-pointer absolute top-[22px] right-[35px] w-[40px] h-[40px] z-[99] "
+            className="sidebarIconToggle cursor-pointer absolute top-[22px] lg:right-[300px] w-[35px] h-[35px] z-[99] "
             onClick={toggleMenu}
           >
             <div className="spinner diagonal part-1 w-full h-[3px] bg-black absolute "></div>
-            <div className="spinner horizontal w-full h-[3px] bg-black absolute mt-[3px]"></div>
-            <div className="spinner diagonal part-2 w-full h-[3px] bg-black absolute mt-[3px]"></div>
+            <div className="spinner horizontal w-full h-[3px] bg-black absolute mt-[10px]"></div>
+            <div className="spinner diagonal part-2 w-full h-[3px] bg-black absolute mt-[10px]"></div>
             <span>
-              <p className="font-poppins font-semibold"> MENU</p>
+              <p className="font-poppins font-medium items-center mt-2 ">
+                {" "}
+                Menu
+              </p>
             </span>
           </label>
         </div>

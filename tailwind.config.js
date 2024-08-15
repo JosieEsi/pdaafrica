@@ -12,6 +12,7 @@ export default {
       "3xl": ["28px", "50px"],
       "4xl": ["48px", "58px"],
       "6xl": ["55px", "65px"],
+      "7xl": ["74px", "80px"],
       "8xl": ["76px", "86px"],
     },
     extend: {
@@ -34,16 +35,6 @@ export default {
       },
       screens: {
         wide: "1440px",
-      },
-
-      animation: {
-        "loop-scroll": "loop-scroll 60s linear infinite",
-      },
-      keyframes: {
-        "loop-scroll": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
-        },
       },
     },
   },
