@@ -6,6 +6,8 @@ import footerlogo from "./footerlogo.png";
 import line from "./line.svg";
 import video1 from "./video1.png";
 import video2 from "./video2.png";
+import contactimage from "./contactimage.jpg";
+import communication from "./communication.png";
 
 import beyond from "./Beyond-Beans.png";
 import british from "./BRITISH-council.png";
@@ -33,6 +35,9 @@ import tonys from "./Tonys-Chocolonely.jpg";
 import tzedek from "./Tzedek-Logo.jpg";
 import unicef from "./unicef.jpg";
 import university from "./University_of_Bath_.png";
+
+import africateam from "./africateam.png";
+import mission from "./mission.jpg";
 
 export {
   image1,
@@ -69,4 +74,8 @@ export {
   tzedek,
   unicef,
   university,
+  contactimage,
+  communication,
+  africateam,
+  mission,
 };

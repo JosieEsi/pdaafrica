@@ -19,6 +19,9 @@ import whiteLinkedin from "./square-linkedin.svg";
 import whiteFacebook from "./square-facebook.svg";
 import whiteTwitter from "./square-x-twitter.svg";
 import whiteYoutube from "./square-youtube.svg";
+import givelove from "./give-love.svg";
+import volunteer from "./volunteer.svg";
+import negotiation from "./negotiation.svg";
 
 export {
   arrowLeft,
@@ -41,4 +44,7 @@ export {
   whiteFacebook,
   whiteTwitter,
   whiteYoutube,
+  givelove,
+  volunteer,
+  negotiation,
 };

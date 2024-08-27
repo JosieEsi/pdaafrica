@@ -148,14 +148,16 @@ const Units = () => {
             </h3>
             <div className="grid grid-cols-2 max-sm:grid-cols-2 gap-4 ">
               <div className="w-full h-[130px] bg-red relative shadow-lg flex flex-col items-center justify-center">
-                <img
-                  src={globe}
-                  alt="africa"
-                  className="h-10 w-10 flex justify-center"
-                />
-                <div className="w-full bg-white absolute bottom-0 text-center py-2 font-poppins text-xs font-semibold">
-                  <p>PDA Africa</p>
-                </div>
+                <a href="/pdaafrica">
+                  <img
+                    src={globe}
+                    alt="africa"
+                    className="h-10 w-10 flex justify-center"
+                  />
+                  <div className="w-full bg-white absolute bottom-0 text-center py-2 font-poppins text-xs font-semibold">
+                    <p>PDA Africa</p>
+                  </div>
+                </a>
               </div>
               <div className="w-full h-[130px] bg-red relative shadow-lg flex flex-col items-center justify-center">
                 <img

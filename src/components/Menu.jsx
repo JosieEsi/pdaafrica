@@ -48,7 +48,7 @@ const Menu = () => {
 
       <div className="flex flex-row pl-5">
         <img src={search} alt="Search Icon" className="w-6 h-6 mb-5" />
-        <a className="sm:pl-5" href="tel:+233302252998,+2333022970177">
+        <a className="sm:pl-5" href="/contact">
           <Button label="Contact Us" />
         </a>
       </div>

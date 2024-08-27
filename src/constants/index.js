@@ -7,6 +7,9 @@ import {
   whiteFacebook,
   whiteLinkedin,
   whiteTwitter,
+  givelove,
+  volunteer,
+  negotiation,
 } from "../assets/icons";
 
 import {
@@ -39,11 +42,11 @@ import {
 } from "../assets/images";
 
 export const navLinks = [
-  { href: "#home", label: "Home" },
+  { href: "./", label: "Home" },
   { href: "#ethical-review-committee", label: "Ethical Review Committee" },
   { href: "#child-abuse-tracker", label: "Child Abuse Tracker" },
   { href: "#covid-19", label: "COVID 19" },
-  { href: "#partners", label: "Partners" },
+  { href: "./partners", label: "Partners" },
   { href: "#events", label: "Events" },
 ];
 
@@ -213,4 +216,26 @@ export const partners = [
   { imgURL: tzedek, name: "Tzedek" },
   { imgURL: unicef, name: "Unicef" },
   { imgURL: university, name: "University" },
+];
+
+export const services = [
+  {
+    imgURL: volunteer,
+    label: "Become a Volunteer",
+    subtext: "Enjoy seamless shopping with our complimentary shipping service.",
+    button: "Join us now",
+  },
+  {
+    imgURL: givelove,
+    label: "Donate to support",
+    subtext:
+      "Experience worry-free transactions with our secure payment options.",
+    button: "Donate now",
+  },
+  {
+    imgURL: negotiation,
+    label: "Become a partner",
+    subtext: "Our dedicated team is here to assist you every step of the way.",
+    button: "Get in touch",
+  },
 ];

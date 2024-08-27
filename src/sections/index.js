@@ -7,6 +7,10 @@ import Publications from "./Publications";
 import Videos from "./Videos";
 import Partners from "./Partners";
 import Footer from "./Footer";
+import Aboutafrica from "./Aboutafrica";
+import Donate from "./Donate";
+import Volunteer from "./Volunteer";
+import Projects from "./Projects";
 
 export {
   Hero,
@@ -18,4 +22,8 @@ export {
   Videos,
   Partners,
   Footer,
+  Aboutafrica,
+  Donate,
+  Volunteer,
+  Projects,
 };

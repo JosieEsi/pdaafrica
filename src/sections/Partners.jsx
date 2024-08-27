@@ -146,6 +146,7 @@ const Partners = () => {
     <section
       id="partners"
       className="flex max-container overflow-hidden justify-center"
+      href="./partners"
     >
       <div className="bg-white w-full lg:w-2/3 max-sm:w-full flex flex-col justify-center">
         <div className="bg-white ml-10 max-sm:ml-0 justify-center">

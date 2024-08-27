@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex flex-col justify-end lg:justify-center bg-cover bg-left top-20 "
+      className="relative flex flex-col justify-end lg:justify-center bg-cover bg-left top-20 h-max"
     >
       <video
         loop

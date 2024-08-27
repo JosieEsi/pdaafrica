@@ -8,38 +8,75 @@ import {
   Videos,
   Partners,
   Footer,
+  Aboutafrica,
+  Donate,
+  Volunteer,
+  Projects,
 } from "./sections";
 import Nav from "./components/Nav";
-import Menu from "./components/Menu";
+import PDAAFRICA from "./pages/PDAAFRICA";
+import { Outlet, useLocation } from "react-router-dom";
 
 const App = () => {
+  const location = useLocation();
+
   return (
     <main className="relative">
-      <Nav />
-      <section>
-        <Hero />
-      </section>
-      <section className="padding">
-        <Work />
-      </section>
-      <section className="padding bg-gray-200">
-        <Updates />
-      </section>
-      <section className="padding">
-        <Units />
-      </section>
-      <section className="padding">
-        <Events />
-      </section>
-      <section className="bg-gray-200 padding">
-        <Publications />
-      </section>
-      <section className="padding">
-        <Videos />
-      </section>
-      <section className="padding">
-        <Partners />
-      </section>
+      <header>
+        <Nav />
+      </header>
+
+      {location.pathname === "/" ? (
+        // Home page layout with all the sections
+        <>
+          <section>
+            <Hero />
+          </section>
+          <section className="padding">
+            <Work />
+          </section>
+          <section className="padding bg-gray-200">
+            <Updates />
+          </section>
+          <section className="padding">
+            <Units />
+          </section>
+          <section className="padding">
+            <Events />
+          </section>
+          <section className="bg-gray-200 padding">
+            <Publications />
+          </section>
+          <section className="padding">
+            <Videos />
+          </section>
+          <section className="padding">
+            <Partners />
+          </section>
+        </>
+      ) : location.pathname === "/pdaafrica" ? (
+        // PDAAFRICA page layout
+        <>
+          <PDAAFRICA />
+          {/* Add more sections here as needed */}
+          <section className="padding">
+            <Aboutafrica />
+          </section>
+          <section className="padding">
+            <Volunteer />
+          </section>
+          <section className="padding">
+            <Donate />
+          </section>
+          <section className="padding">
+            <Projects />
+          </section>
+        </>
+      ) : (
+        // Outlet for other routes like Contact page
+        <Outlet />
+      )}
+
       <section className="bg-[#525050] padding">
         <Footer />
       </section>

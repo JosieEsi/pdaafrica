@@ -1,3 +1,5 @@
+import { africateam } from "./src/assets/images";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -32,6 +34,7 @@ export default {
       },
       backgroundImage: {
         hero: "url('../assets/images/hero.svg')",
+        africa: "url('assets/images/africateam.png')",
       },
       screens: {
         wide: "1440px",
