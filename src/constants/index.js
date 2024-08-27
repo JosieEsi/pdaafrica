@@ -224,6 +224,7 @@ export const services = [
     label: "Become a Volunteer",
     subtext: "Enjoy seamless shopping with our complimentary shipping service.",
     button: "Join us now",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSePqWX9ONz-h6EGOAmcy-NO1_yygaO6ETLuBlQNAf0OGGUfFA/viewform?embedded=true",
   },
   {
     imgURL: givelove,
@@ -231,11 +232,13 @@ export const services = [
     subtext:
       "Experience worry-free transactions with our secure payment options.",
     button: "Donate now",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSePqWX9ONz-h6EGOAmcy-NO1_yygaO6ETLuBlQNAf0OGGUfFA/viewform?embedded=true",
   },
   {
     imgURL: negotiation,
-    label: "Become a partner",
+    label: "Become a Partner",
     subtext: "Our dedicated team is here to assist you every step of the way.",
     button: "Get in touch",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSePqWX9ONz-h6EGOAmcy-NO1_yygaO6ETLuBlQNAf0OGGUfFA/viewform?embedded=true",
   },
 ];

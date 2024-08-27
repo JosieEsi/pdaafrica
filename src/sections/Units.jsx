@@ -154,10 +154,13 @@ const Units = () => {
                     alt="africa"
                     className="h-10 w-10 flex justify-center"
                   />
-                  <div className="w-full bg-white absolute bottom-0 text-center py-2 font-poppins text-xs font-semibold">
-                    <p>PDA Africa</p>
-                  </div>
                 </a>
+                <div className="w-full bg-white absolute bottom-0 text-center py-2 font-poppins text-xs font-semibold">
+                  <a href="/pdaafrica">
+                    {" "}
+                    <p>PDA Africa</p>
+                  </a>
+                </div>
               </div>
               <div className="w-full h-[130px] bg-red relative shadow-lg flex flex-col items-center justify-center">
                 <img
