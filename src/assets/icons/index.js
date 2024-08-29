@@ -22,6 +22,10 @@ import whiteYoutube from "./square-youtube.svg";
 import givelove from "./give-love.svg";
 import volunteer from "./volunteer.svg";
 import negotiation from "./negotiation.svg";
+import star from "./star.svg";
+import call from "./call.svg";
+import email from "./email.svg";
+import location from "./location.svg";
 
 export {
   arrowLeft,
@@ -47,4 +51,8 @@ export {
   givelove,
   volunteer,
   negotiation,
+  star,
+  call,
+  email,
+  location,
 };

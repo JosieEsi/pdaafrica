@@ -10,6 +10,9 @@ import {
   givelove,
   volunteer,
   negotiation,
+  call,
+  email,
+  location,
 } from "../assets/icons";
 
 import {
@@ -39,6 +42,13 @@ import {
   tzedek,
   unicef,
   university,
+  cclp,
+  vsla,
+  ncrp,
+  customer1,
+  customer2,
+  customer3,
+  customer4,
 } from "../assets/images";
 
 export const navLinks = [
@@ -240,5 +250,99 @@ export const services = [
     subtext: "Our dedicated team is here to assist you every step of the way.",
     button: "Get in touch",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSePqWX9ONz-h6EGOAmcy-NO1_yygaO6ETLuBlQNAf0OGGUfFA/viewform?embedded=true",
+  },
+];
+
+export const projects = [
+  {
+    imgURL: vsla,
+    label: "Financial Inclusion and VSLAs",
+    subtext:
+      "Mobilizing, forming and training VSLA groups in communities for financial inclusion.",
+    button: "Read More",
+    link: "/",
+  },
+  {
+    imgURL: cclp,
+    label: "Cocoa Communities’ Library Project",
+    subtext:
+      "Promoting literacy and reading habits in cocoa-growing communities.",
+    button: "Read More",
+    link: "/",
+  },
+  {
+    imgURL: ncrp,
+    label: "Nyonkopa Child Labour Remediation",
+    subtext:
+      "Remediating identified child labour cases in the supply chain of Barry Callebaut (Nyonkopa).",
+    button: "Read More",
+    link: "/",
+  },
+];
+export const reviews = [
+  {
+    imgURL: customer1,
+    customerName: "Morich Brown",
+    // rating: 4.5,
+    feedback:
+      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+  },
+  {
+    imgURL: customer2,
+    customerName: "Lota Mongeskar",
+    // rating: 4.5,
+    feedback:
+      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+  },
+  {
+    imgURL: customer3,
+    customerName: "Jin Penge",
+    // rating: 4.5,
+    feedback:
+      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+  },
+
+  {
+    imgURL: customer4,
+    customerName: "Bitras Wesrad",
+    // rating: 4.5,
+    feedback:
+      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+  },
+];
+
+export const contacts = [
+  {
+    imgURL: location,
+    label: "Head Office Address:",
+    links: [
+      {
+        name: " GA0472784 Asafoatse Oman Street",
+        link: "https://www.ghanapostgps.com/map/#GA0472784",
+      },
+      {
+        name: "AK-849-3514 Anwomaso Rd",
+        link: "https://www.ghanapostgps.com/map/#AK8493514",
+      },
+    ],
+  },
+  {
+    imgURL: call,
+    label: "Contact Number:",
+    links: [
+      { name: "+233 (0)208129622", link: "tel:+233208129622" },
+      {
+        name: "+233 (0)302 252998 / 2970177",
+        link: "tel:+233302252998, tel:+2333022970177",
+      },
+    ],
+  },
+  {
+    imgURL: email,
+    label: "Email Address:",
+    links: [
+      { name: "Website:", link: "https://pdaghana.com" },
+      { name: "Email:", link: "mailto:info@pdaghana.com" },
+    ],
   },
 ];

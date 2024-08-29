@@ -1,20 +1,34 @@
 import Button from "../components/Button";
+import { useState } from "react";
+import ProjectCard from "../components/ProjectCard";
+import { projects } from "../constants";
 
 const Projects = () => {
+  const [activeForm, setActiveForm] = useState(null);
+
+  const handleButtonClick = (link) => {
+    setActiveForm(link);
+  };
+
+  const handleClose = () => {
+    setActiveForm(null);
+  };
+
   return (
-    <section
-      id="projects"
-      className="max-container flex justify-between items-center max-lg:flex-col gap-10 mt-10"
-    >
-      <h3 className="text-4xl leading-[68px] lg:max-w-md font-poppins font-bold">
-        Sign Up for
-        <span className="text-red"> Updates </span> & Newsletter
-      </h3>
-      <div className="lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full">
-        <input type="text" placeholder="subscribe@nike.com" className="input" />
-        <div className="flex max-sm:justify-end items-center max-sm:w-full">
-          <Button label="Sign Up" fullWidth />
-        </div>
+    <section id="projects" className="max-container w-full ">
+      <div className="flex justify-center w-full">
+        <h3 className="text-4xl leading-[68px]  font-poppins font-bold mb-5">
+          Our<span className="text-red"> Projects </span>
+        </h3>
+      </div>
+      <div className=" flex justify-center flex-wrap gap-9">
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.label}
+            {...project}
+            onClick={() => handleButtonClick(project.link)}
+          />
+        ))}
       </div>
     </section>
   );

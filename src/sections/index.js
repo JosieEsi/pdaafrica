@@ -11,6 +11,8 @@ import Aboutafrica from "./Aboutafrica";
 import Donate from "./Donate";
 import Volunteer from "./Volunteer";
 import Projects from "./Projects";
+import CustomerReviews from "./CustomerReviews";
+import PdaafricaContact from "./PdaafricaContact";
 
 export {
   Hero,
@@ -26,4 +28,6 @@ export {
   Donate,
   Volunteer,
   Projects,
+  CustomerReviews,
+  PdaafricaContact,
 };

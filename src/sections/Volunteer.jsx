@@ -16,13 +16,16 @@ const Volunteer = () => {
   };
 
   return (
-    <section id="getinvolved" className="max-container ">
-      <div className="flex justify-center w-full">
-        <h3 className="text-4xl leading-[68px]  font-poppins font-bold mb-5">
+    <section id="getinvolved" className="max-container w-full">
+      <div className="flex flex-col justify-center w-full ">
+        <h2 className="text-orange font-bold text-xl text-center mb-5">
+          Get Involved
+        </h2>
+        <h3 className="text-4xl leading-[68px]  font-poppins font-bold mb-5 items-center text-center">
           Let's Make A<span className="text-red"> Difference</span> Today
         </h3>
       </div>
-      <div className=" flex justify-center flex-wrap gap-9">
+      <div className=" flex justify-center flex-wrap gap-9 ">
         {services.map((service) => (
           <ServiceCard
             key={service.label}

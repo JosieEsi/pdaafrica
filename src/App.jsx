@@ -12,6 +12,8 @@ import {
   Donate,
   Volunteer,
   Projects,
+  CustomerReviews,
+  PdaafricaContact,
 } from "./sections";
 import Nav from "./components/Nav";
 import PDAAFRICA from "./pages/PDAAFRICA";
@@ -62,14 +64,17 @@ const App = () => {
           <section className="padding">
             <Aboutafrica />
           </section>
+          <section className="padding bg-gray-200">
+            <Projects />
+          </section>
+          <section className="padding">
+            <CustomerReviews />
+          </section>
           <section className="padding">
             <Volunteer />
           </section>
           <section className="padding">
-            <Donate />
-          </section>
-          <section className="padding">
-            <Projects />
+            <PdaafricaContact />
           </section>
         </>
       ) : (

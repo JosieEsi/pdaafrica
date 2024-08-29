@@ -38,6 +38,16 @@ import university from "./University_of_Bath_.png";
 
 import africateam from "./africateam.png";
 import mission from "./mission.jpg";
+import cclp from "./cclp.jpg";
+import vsla from "./vsla.jpg";
+import ncrp from "./ncrp.jpg";
+
+import customer1 from "./customer1.jpg";
+import customer2 from "./customer2.jpg";
+import customer3 from "./customer3.jpg";
+import customer4 from "./customer4.jpg";
+
+import reachout from "./reachout.jpg";
 
 export {
   image1,
@@ -78,4 +88,12 @@ export {
   communication,
   africateam,
   mission,
+  cclp,
+  vsla,
+  ncrp,
+  customer1,
+  customer2,
+  customer3,
+  customer4,
+  reachout,
 };

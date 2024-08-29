@@ -12,7 +12,7 @@ export default {
       xl: ["20px", "24.38px"],
       "2xl": ["24px", "29.26px"],
       "3xl": ["28px", "50px"],
-      "4xl": ["48px", "58px"],
+      "4xl": ["44px", "58px"],
       "6xl": ["55px", "65px"],
       "7xl": ["74px", "80px"],
       "8xl": ["76px", "86px"],
@@ -35,6 +35,7 @@ export default {
       backgroundImage: {
         hero: "url('../assets/images/hero.svg')",
         africa: "url('assets/images/africateam.png')",
+        reach: "url('assets/images/reachout.jpg')",
       },
       screens: {
         wide: "1440px",
