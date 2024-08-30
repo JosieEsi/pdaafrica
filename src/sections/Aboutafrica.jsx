@@ -1,11 +1,12 @@
 import Button from "../components/Button";
 import { mission } from "../assets/images";
+import { reachout } from "../assets/images";
 
 const Aboutafrica = () => {
   return (
     <section
       id="about-us"
-      className="max-container items-center justify-center gap-6 w-full flex max-sm:flex-col mt-20 max-sm:mt-20 flex-col lg:grid"
+      className="max-container items-center justify-center gap-6 w-full flex max-sm:flex-col max-sm:mt-20 flex-col lg:grid"
     >
       <h2 className="text-orange font-bold text-xl text-center mb-5">
         About Us
@@ -38,7 +39,7 @@ const Aboutafrica = () => {
       <div className="flex flex-row gap-20 justify-between items-center flex-wrap max-sm:flex-col-reverse max-md:flex-col-reverse">
         <div className="flex-1 flex justify-center items-center">
           <img
-            src={mission}
+            src={reachout}
             alt="mission"
             width={570}
             height={522}

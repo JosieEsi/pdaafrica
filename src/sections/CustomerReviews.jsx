@@ -4,15 +4,15 @@ import { reviews } from "../constants";
 const CustomerReviews = () => {
   return (
     <section className="max-container justify-center">
-      <h2 className="text-orange font-bold text-xl text-center mb-5">
+      <h2 className="text-orange font-bold text-xl text-center mb-5 font-poppins">
         Testimonials
       </h2>
-      <h3 className="font-palanquin text-center text-4xl font-bold">
+      <h3 className="font-poppins text-center text-4xl font-bold">
         Our
         <span className="text-red"> Impact </span>
         on Community
       </h3>
-      <p className="m-auto mt-4 max-w-lg  text-center info-text">
+      <p className="m-auto mt-4 max-w-lg  text-center info-text font-poppins">
         Hear genuine stories from our benefactors and volunteers about their
         exceptional experiences with us.
       </p>
@@ -23,7 +23,7 @@ const CustomerReviews = () => {
             key={index}
             imgURL={review.imgURL}
             customerName={review.customerName}
-            // rating={review.rating}
+            rating={review.rating}
             feedback={review.feedback}
           />
         ))}

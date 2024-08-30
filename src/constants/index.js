@@ -49,6 +49,11 @@ import {
   customer2,
   customer3,
   customer4,
+  Image1,
+  Image3,
+  Image2,
+  Image4,
+  Image5,
 } from "../assets/images";
 
 export const navLinks = [
@@ -232,7 +237,8 @@ export const services = [
   {
     imgURL: volunteer,
     label: "Become a Volunteer",
-    subtext: "Enjoy seamless shopping with our complimentary shipping service.",
+    subtext:
+      "Volunteers are the backbone of our organisation, help us make an impact on the world today.",
     button: "Join us now",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSePqWX9ONz-h6EGOAmcy-NO1_yygaO6ETLuBlQNAf0OGGUfFA/viewform?embedded=true",
   },
@@ -240,16 +246,17 @@ export const services = [
     imgURL: givelove,
     label: "Donate to support",
     subtext:
-      "Experience worry-free transactions with our secure payment options.",
+      "Large or small, your donation helps change the lives of people in Africa, both old and young.",
     button: "Donate now",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSePqWX9ONz-h6EGOAmcy-NO1_yygaO6ETLuBlQNAf0OGGUfFA/viewform?embedded=true",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeMejX4CP15Iex2bcOJqUK5Uwub8rlTQdyyDLRy204_YzVfYA/viewform?embedded=true",
   },
   {
     imgURL: negotiation,
     label: "Become a Partner",
-    subtext: "Our dedicated team is here to assist you every step of the way.",
+    subtext:
+      "Work closely with our team to develop mutually beneficial initiatives with undeniable impact.",
     button: "Get in touch",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSePqWX9ONz-h6EGOAmcy-NO1_yygaO6ETLuBlQNAf0OGGUfFA/viewform?embedded=true",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSckRIpUxFJ9CwLBM7YjW3zp0WGRd1yE0TyTm1Wi-xZWKN-pXA/viewform?embedded=true",
   },
 ];
 
@@ -283,31 +290,31 @@ export const reviews = [
   {
     imgURL: customer1,
     customerName: "Morich Brown",
-    // rating: 4.5,
+    rating: "Volunteer",
     feedback:
-      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+      "Volunteering with PDA Africa has been the most interesting and exciting experience ever.",
   },
   {
     imgURL: customer2,
     customerName: "Lota Mongeskar",
-    // rating: 4.5,
+    rating: "Partner",
     feedback:
-      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+      "Collaborating with PDA Africa has opened our eyes to how best we an serve the communities we find ourselves in.",
   },
   {
     imgURL: customer3,
     customerName: "Jin Penge",
-    // rating: 4.5,
+    rating: "Staff",
     feedback:
-      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+      "PDA Africa is a great place to spend your time, you feel as though your time on earth is really worth it!",
   },
 
   {
     imgURL: customer4,
     customerName: "Bitras Wesrad",
-    // rating: 4.5,
+    rating: "Benefactor",
     feedback:
-      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+      "Their contributions and dedication to helping my community has really been life-changing",
   },
 ];
 
@@ -344,5 +351,37 @@ export const contacts = [
       { name: "Website:", link: "https://pdaghana.com" },
       { name: "Email:", link: "mailto:info@pdaghana.com" },
     ],
+  },
+];
+export const imageArray = [
+  {
+    src: Image1,
+    alt: "Image 1",
+    title: "First Slide Title",
+    description: "This is the description for the first slide.",
+  },
+  {
+    src: Image2,
+    alt: "Image 2",
+    title: "Second Slide Title",
+    description: "This is the description for the second slide.",
+  },
+  {
+    src: Image3,
+    alt: "Image 3",
+    title: "Third Slide Title",
+    description: "This is the description for the third slide.",
+  },
+  {
+    src: Image4,
+    alt: "Image 4",
+    title: "Forth Slide Title",
+    description: "This is the description for the forth slide.",
+  },
+  {
+    src: Image5,
+    alt: "Image 5",
+    title: "Fifth Slide Title",
+    description: "This is the description for the fifth slide.",
   },
 ];

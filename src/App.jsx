@@ -70,7 +70,7 @@ const App = () => {
           <section className="padding">
             <CustomerReviews />
           </section>
-          <section className="padding">
+          <section className="padding  bg-gray-200">
             <Volunteer />
           </section>
           <section className="padding">

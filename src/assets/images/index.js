@@ -49,6 +49,12 @@ import customer4 from "./customer4.jpg";
 
 import reachout from "./reachout.jpg";
 
+import Image1 from "./Image1.jpg";
+import Image2 from "./Image2.jpg";
+import Image3 from "./Image3.jpg";
+import Image4 from "./Image4.jpg";
+import Image5 from "./Image5.jpg";
+
 export {
   image1,
   image2,
@@ -96,4 +102,9 @@ export {
   customer3,
   customer4,
   reachout,
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5,
 };
