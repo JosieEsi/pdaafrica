@@ -4,19 +4,24 @@ import { navigation } from "../constants";
 import { socialMedia } from "../constants";
 import Button from "./Button";
 
-const Menu = () => {
+const Menu = ({ onLinkClick }) => {
   return (
     <section className="max-container flex flex-row justify-between p-10 flex-wrap overflow-y-auto max-h-screen">
       <div className="flex flex-col text-red gap-10 ml-10 font-semibold text-xl font-poppins max-sm:text-base max-sm:ml-0 max-sm:gap-4 md:text-base md:gap-6 ">
         {navLinks.map((section) => (
-          <a key={section.label} href={section.href}>
+          <a key={section.label} href={section.href} onClick={onLinkClick}>
             {section.label}
           </a>
         ))}
         <div className="flex gap-5 mt-5">
           {socialMedia.map((icon) => (
             <div className="flex" key={icon.alt}>
-              <a href={icon.link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={icon.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={onLinkClick}
+              >
                 <img src={icon.src} alt={icon.alt} width={24} height={24} />
               </a>
             </div>
@@ -38,7 +43,9 @@ const Menu = () => {
                   className="font-poppins text-base text-black hover:text-black mt-5 max-sm:text-xs"
                   key={link.name}
                 >
-                  <a href={link.link}>{link.name}</a>
+                  <a href={link.link} onClick={onLinkClick}>
+                    {link.name}
+                  </a>
                 </li>
               ))}
             </ul>

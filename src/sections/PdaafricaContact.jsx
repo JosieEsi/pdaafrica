@@ -6,7 +6,7 @@ import { africateam } from "../assets/images";
 const Contacts = () => {
   return (
     <section
-      id="contacts"
+      id="contact-us"
       className="max-container py-2 flex flex-wrap min-h-screen justify-center gap-14  max-sm:gap-2"
     >
       <div className="w-full flex justify-center flex-col">

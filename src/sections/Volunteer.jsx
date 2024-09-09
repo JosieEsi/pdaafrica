@@ -16,7 +16,7 @@ const Volunteer = () => {
   };
 
   return (
-    <section id="getinvolved" className="max-container w-full">
+    <section id="get-involved" className="max-container w-full">
       <div className="flex flex-col justify-center w-full ">
         <h2 className="text-orange font-bold text-xl text-center mb-5">
           Get Involved

@@ -18,14 +18,22 @@ import {
 import Nav from "./components/Nav";
 import PDAAFRICA from "./pages/PDAAFRICA";
 import { Outlet, useLocation } from "react-router-dom";
+import PDAAFRICAMenu from "./components/PDAAFRICAMenu";
 
 const App = () => {
   const location = useLocation();
 
   return (
     <main className="relative">
-      <header>
+      {/* <header>
         <Nav />
+      </header> */}
+      <header>
+        {location.pathname === "/pdaafrica" ? (
+          <PDAAFRICAMenu /> // Render PDAAFRICA menu
+        ) : (
+          <Nav /> // Render home page menu
+        )}
       </header>
 
       {location.pathname === "/" ? (

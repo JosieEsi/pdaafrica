@@ -1,7 +1,6 @@
 import { useState } from "react";
 // import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { pdaLogo } from "../assets/images";
-import { menu, close } from "../assets/icons";
 import Menu from "./Menu";
 
 const Nav = () => {
@@ -10,11 +9,13 @@ const Nav = () => {
   const toggleMenu = () => {
     if (isMenuVisible) {
       setIsMenuVisible(false);
-      enablePageScroll();
     } else {
       setIsMenuVisible(true);
-      disablePageScroll();
     }
+  };
+
+  const handleClick = () => {
+    setIsMenuVisible(false);
   };
 
   return (
@@ -64,7 +65,7 @@ const Nav = () => {
           zIndex: 1,
         }}
       >
-        <Menu />
+        <Menu onLinkClick={handleClick} />
       </div>
     </header>
   );

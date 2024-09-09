@@ -3,7 +3,7 @@ import HomeSlider from "../components/HomeSlider";
 
 const PDAAFRICA = () => {
   return (
-    <section id="pdaafrica" className="max-container">
+    <section id="pdaafrica" className="max-container w-full">
       <div>
         <HomeSlider />
       </div>

@@ -61,7 +61,7 @@ export const navLinks = [
   { href: "#ethical-review-committee", label: "Ethical Review Committee" },
   { href: "#child-abuse-tracker", label: "Child Abuse Tracker" },
   { href: "#covid-19", label: "COVID 19" },
-  { href: "./partners", label: "Partners" },
+  { href: "#partners", label: "Partners" },
   { href: "#events", label: "Events" },
 ];
 
@@ -69,40 +69,40 @@ export const navigation = [
   {
     title: "Who we are",
     links: [
-      { name: "Vision", link: "/" },
-      { name: "Mission", link: "/" },
-      { name: "Teams", link: "/" },
-      { name: "Board", link: "/" },
-      { name: "Staff", link: "/" },
+      { name: "Vision", link: "#vision" },
+      { name: "Mission", link: "#mission" },
+      { name: "Teams", link: "#teams" },
+      { name: "Board", link: "#board" },
+      { name: "Staff", link: "#staff" },
     ],
   },
 
   {
     title: "What we do",
     links: [
-      { name: "Strategic Themes", link: "/" },
-      { name: "Our Projects", link: "/" },
-      { name: "Expertise", link: "/" },
+      { name: "Strategic Themes", link: "#strategic-themes" },
+      { name: "Our Projects", link: "#our-projects" },
+      { name: "Expertise", link: "#expertise" },
     ],
   },
 
   {
     title: "Resources",
     links: [
-      { name: "Publications", link: "/" },
-      { name: "Podcast", link: "/" },
-      { name: "Vodcast", link: "/" },
-      { name: "Videos", link: "/" },
-      { name: "Photos", link: "/" },
+      { name: "Publications", link: "#publications" },
+      { name: "Podcast", link: "#podcast" },
+      { name: "Vodcast", link: "#vodcast" },
+      { name: "Videos", link: "#videos" },
+      { name: "Photos", link: "#photos" },
     ],
   },
 
   {
     title: "Impact",
     links: [
-      { name: "Impact Stories", link: "/" },
-      { name: "Documentaries", link: "/" },
-      { name: "Case Studies", link: "/" },
+      { name: "Impact Stories", link: "#impact-stories" },
+      { name: "Documentaries", link: "#documentaries" },
+      { name: "Case Studies", link: "#case-studies" },
     ],
   },
 ];
@@ -384,4 +384,12 @@ export const imageArray = [
     title: "Fifth Slide Title",
     description: "This is the description for the fifth slide.",
   },
+];
+
+export const africaLinks = [
+  { href: "#about-us", label: "About Us" },
+  { href: "#projects", label: "Projects" },
+  { href: "#testimonials", label: "Testimonials" },
+  { href: "#get-involved", label: "Get Involved" },
+  { href: "#contact-us", label: "Contact Us" },
 ];
