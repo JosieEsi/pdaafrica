@@ -95,7 +95,7 @@ import { paper } from "../assets/icons";
 const Publications = () => {
   return (
     <section
-      id="units"
+      id="publications"
       className="max-container flex lg:justify-center font-poppins"
     >
       <div className="bg-white h-auto grid rounded-3xl w-full lg:w-2/3 p-6">
