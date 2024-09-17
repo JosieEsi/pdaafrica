@@ -12,7 +12,7 @@ const Aboutafrica = () => {
         About Us
       </h2>
       <div className="flex flex-row gap-20 justify-between flex-wrap max-sm:flex-col max-md:flex-col">
-        <div className="flex flex-1 flex-col  ">
+        <div className="flex flex-1 flex-col lg:justify-center ">
           <h2 className="font-poppins capitalize text-4xl lg:max-w-lg font-bold">
             Our
             <span className="text-red"> Mission </span>

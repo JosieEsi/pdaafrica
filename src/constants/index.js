@@ -267,15 +267,15 @@ export const projects = [
     subtext:
       "Mobilizing, forming and training VSLA groups in communities for financial inclusion.",
     button: "Read More",
-    link: "/",
+    link: "https://pdaghana.com/pdas-financial-inclusion-programmes-in-sub-saharan-africa/",
   },
   {
     imgURL: cclp,
     label: "Cocoa Communities’ Library Project",
     subtext:
-      "Promoting literacy and reading habits in cocoa-growing communities.",
+      "Promoting literacy and reading habits among children in cocoa-growing communities.",
     button: "Read More",
-    link: "/",
+    link: "https://pdaghana.com/59840-2/",
   },
   {
     imgURL: ncrp,
@@ -283,7 +283,7 @@ export const projects = [
     subtext:
       "Remediating identified child labour cases in the supply chain of Barry Callebaut (Nyonkopa).",
     button: "Read More",
-    link: "/",
+    link: "https://pdaghana.com/nyonkopa-child-labour-remediation-vsla/",
   },
 ];
 export const reviews = [
@@ -299,7 +299,7 @@ export const reviews = [
     customerName: "Lota Mongeskar",
     rating: "Partner",
     feedback:
-      "Collaborating with PDA Africa has opened our eyes to how best we an serve the communities we find ourselves in.",
+      "Collaborating with PDA Africa has shown us how best we can serve the communities we find ourselves.",
   },
   {
     imgURL: customer3,
@@ -392,4 +392,11 @@ export const africaLinks = [
   { href: "#testimonials", label: "Testimonials" },
   { href: "#get-involved", label: "Get Involved" },
   { href: "#contact-us", label: "Contact Us" },
+];
+
+export const donateButton = [
+  {
+    label: "Donate now",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeMejX4CP15Iex2bcOJqUK5Uwub8rlTQdyyDLRy204_YzVfYA/viewform?embedded=true",
+  },
 ];

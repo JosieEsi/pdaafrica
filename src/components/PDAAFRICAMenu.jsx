@@ -3,6 +3,7 @@ import { pdaLogo } from "../assets/images";
 import { africaLinks } from "../constants";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { donateButton } from "../constants";
 
 const PDAAFRICAMenu = () => {
   const pathname = useLocation();
@@ -46,6 +47,10 @@ const PDAAFRICAMenu = () => {
             </li>
           ))}
         </ul>
+        <button className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none max-lg:hidden ">
+          Donate now
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMejX4CP15Iex2bcOJqUK5Uwub8rlTQdyyDLRy204_YzVfYA/viewform?embedded=true"></a>
+        </button>
         <div className="hidden max-lg:block">
           <input
             type="checkbox"
@@ -92,6 +97,10 @@ const PDAAFRICAMenu = () => {
                 </a>
               </li>
             ))}
+            <button className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none">
+              Donate now
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMejX4CP15Iex2bcOJqUK5Uwub8rlTQdyyDLRy204_YzVfYA/viewform?embedded=true"></a>
+            </button>
           </ul>
         </div>
       </nav>

@@ -18,7 +18,7 @@ const Volunteer = () => {
   return (
     <section id="get-involved" className="max-container w-full">
       <div className="flex flex-col justify-center w-full ">
-        <h2 className="text-orange font-bold text-xl text-center mb-5">
+        <h2 className="text-orange font-bold text-xl text-center mb-5 font-poppins">
           Get Involved
         </h2>
         <h3 className="text-4xl leading-[68px]  font-poppins font-bold mb-5 items-center text-center">

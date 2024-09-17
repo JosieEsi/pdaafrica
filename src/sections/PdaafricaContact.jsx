@@ -374,16 +374,16 @@ const Contacts = () => {
       </div>
 
       <div className="w-full md:w-1/2 lg:w-[50%] px-1 lg:mt-0 justify-center flex-wrap">
-        <div className="bg-cover bg-africa p-10 rounded-lg shadow-lg">
-          <form className="flex flex-col gap-4 mt-5" onSubmit={handleSubmit}>
-            <div className="flex gap-4 max-sm:flex-wrap md:flex-wrap lg:flex-nowrap ">
+        <div className="bg-cover bg-africa p-8 rounded-lg shadow-lg">
+          <form className="flex flex-col gap-4 mt-8" onSubmit={handleSubmit}>
+            <div className="flex gap-3 max-sm:flex-wrap md:flex-wrap lg:flex-wrap ">
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
                 placeholder="Enter Name*"
-                className="flex-1 p-3 rounded-lg border border-gray-300 bg-opacity-50"
+                className="flex-1 p-2 rounded-lg border border-gray-300 bg-opacity-50"
               />
               <input
                 type="email"
@@ -391,17 +391,17 @@ const Contacts = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="Enter Email*"
-                className="flex-1 p-3 rounded-lg border border-gray-300"
+                className="flex-1 p-2 rounded-lg border border-gray-300"
               />
             </div>
-            <div className="flex gap-4 max-sm:flex-wrap max-md:flex-wrap md:flex-wrap lg:flex-nowrap">
+            <div className="flex gap-3 max-sm:flex-wrap max-md:flex-wrap md:flex-wrap lg:flex-wrap">
               <input
                 type="text"
                 name="subject"
                 value={formData.subject}
                 onChange={handleInputChange}
                 placeholder="Enter Subject*"
-                className="flex-1 p-3 rounded-lg border border-gray-300"
+                className="flex-1 p-2 rounded-lg border border-gray-300"
               />
               <input
                 type="text"
@@ -409,7 +409,7 @@ const Contacts = () => {
                 value={formData.phone}
                 onChange={handleInputChange}
                 placeholder="Enter Phone No.*"
-                className="flex-1 p-3 rounded-lg border border-gray-300"
+                className="flex-1 p-2 rounded-lg border border-gray-300"
               />
             </div>
             <textarea
@@ -417,7 +417,7 @@ const Contacts = () => {
               value={formData.message}
               onChange={handleInputChange}
               placeholder="Enter Message*"
-              className="p-2 rounded-lg border border-gray-300 h-36 w-full pr-0 flex-grow-0"
+              className="p-2 rounded-lg border border-gray-300 h-32 w-full pr-0 flex-grow-0"
             ></textarea>
             <button
               type="submit"
