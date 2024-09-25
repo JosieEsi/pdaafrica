@@ -425,7 +425,7 @@ const Dashboard = () => {
                 <a href="#" className="block">
                   Profile
                 </a>
-                <a href="#" className="block">
+                <a href="/pdaafrica" className="block">
                   Logout
                 </a>
               </div>
