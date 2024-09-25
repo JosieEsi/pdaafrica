@@ -119,9 +119,9 @@ import Tab from "../components/Tab";
 const VideoGallery = () => {
   // Define an array of video objects with their IDs and titles
   const videos = [
-    // { id: "61QUHKQ4ECc", title: "Video 1" },
-    // { id: "6VhatIeDRpo", title: "Video 2" },
-    // { id: "5r9aOmU0mWI", title: "Video 3" },
+    { id: "61QUHKQ4ECc", title: "Video 1" },
+    { id: "6VhatIeDRpo", title: "Video 2" },
+    { id: "5r9aOmU0mWI", title: "Video 3" },
   ];
 
   return (
