@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { imageArray } from "../constants";
+import { imageArray } from "../constants"; // Your array of images
 
 const HomeSlider = () => {
   const settings = {
@@ -17,8 +17,9 @@ const HomeSlider = () => {
   };
 
   return (
-    <div className="w-full max-container">
+    <div className="w-full max-container ">
       <Slider {...settings}>
+        {/* Display images */}
         {imageArray.map((image, index) => (
           <div key={index} className="relative w-full h-[550px]">
             <img
@@ -32,6 +33,30 @@ const HomeSlider = () => {
             </div>
           </div>
         ))}
+
+        {/* Display first iframe */}
+        <div className="w-full h-[550px] flex items-center justify-center pt-28">
+          <iframe
+            title="IA VSLA"
+            width="100%"
+            height="100%"
+            src="https://app.powerbi.com/reportEmbed?reportId=0676b2fd-7dd2-4907-a521-d8dcb6e12fc2&autoAuth=true&ctid=e1c407f4-37ce-4d63-861f-b50872c0d662"
+            frameBorder="0"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        {/* Display second iframe */}
+        <div className="w-full h-[550px] flex items-center justify-center pt-28">
+          <iframe
+            title="Community Reading"
+            width="100%"
+            height="100%"
+            src="https://app.powerbi.com/reportEmbed?reportId=2f0c1f4f-2c7b-44e8-b00b-f3847e7d51e6&autoAuth=true&ctid=e1c407f4-37ce-4d63-861f-b50872c0d662"
+            frameBorder="0"
+            allowFullScreen
+          ></iframe>
+        </div>
       </Slider>
     </div>
   );

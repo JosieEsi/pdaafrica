@@ -55,6 +55,21 @@ import Image3 from "./Image3.jpg";
 import Image4 from "./Image4.jpg";
 import Image5 from "./Image5.jpg";
 
+import launch from "./launch.jpg";
+import clpproject from "./clpproject.jpg";
+import vslagals from "./vslagals.jpg";
+import child from "./child.jpg";
+import vslaintro from "./vslaintro.jpg";
+import female from "./female.jpg";
+import abiba from "./abiba.jpg";
+import salomey from "./salomey.jpg";
+import crp from "./crp.jpg";
+import vsp from "./vsp.jpg";
+
+import CL from "./CL.jpg";
+import CR from "./CR.jpg";
+import vongoing from "./vongoing.jpg";
+
 export {
   image1,
   image2,
@@ -107,4 +122,17 @@ export {
   Image3,
   Image4,
   Image5,
+  launch,
+  clpproject,
+  vslagals,
+  child,
+  vslaintro,
+  female,
+  abiba,
+  salomey,
+  crp,
+  vsp,
+  CL,
+  CR,
+  vongoing,
 };

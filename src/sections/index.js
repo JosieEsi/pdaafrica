@@ -8,11 +8,12 @@ import Videos from "./Videos";
 import Partners from "./Partners";
 import Footer from "./Footer";
 import Aboutafrica from "./Aboutafrica";
-import Donate from "./Donate";
+import AfricaGallery from "./AfricaGallery";
 import Volunteer from "./Volunteer";
 import Projects from "./Projects";
 import CustomerReviews from "./CustomerReviews";
 import PdaafricaContact from "./PdaafricaContact";
+import VideoGallery from "./VideoGallery";
 
 export {
   Hero,
@@ -25,7 +26,8 @@ export {
   Partners,
   Footer,
   Aboutafrica,
-  Donate,
+  AfricaGallery,
+  VideoGallery,
   Volunteer,
   Projects,
   CustomerReviews,

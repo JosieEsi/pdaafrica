@@ -54,6 +54,16 @@ import {
   Image2,
   Image4,
   Image5,
+  launch,
+  clpproject,
+  vslagals,
+  child,
+  vslaintro,
+  female,
+  abiba,
+  salomey,
+  // crp,
+  // vsp,
 } from "../assets/images";
 
 export const navLinks = [
@@ -241,6 +251,7 @@ export const services = [
       "Volunteers are the backbone of our organisation, help us make an impact on the world today.",
     button: "Join us now",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSePqWX9ONz-h6EGOAmcy-NO1_yygaO6ETLuBlQNAf0OGGUfFA/viewform?embedded=true",
+    linkType: "googleForm",
   },
   {
     imgURL: givelove,
@@ -248,7 +259,8 @@ export const services = [
     subtext:
       "Large or small, your donation helps change the lives of people in Africa, both old and young.",
     button: "Donate now",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSeMejX4CP15Iex2bcOJqUK5Uwub8rlTQdyyDLRy204_YzVfYA/viewform?embedded=true",
+    // link: "/pdaafrica/donate", // Route for Paystack form
+    linkType: "paystack",
   },
   {
     imgURL: negotiation,
@@ -257,6 +269,7 @@ export const services = [
       "Work closely with our team to develop mutually beneficial initiatives with undeniable impact.",
     button: "Get in touch",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSckRIpUxFJ9CwLBM7YjW3zp0WGRd1yE0TyTm1Wi-xZWKN-pXA/viewform?embedded=true",
+    linkType: "googleForm",
   },
 ];
 
@@ -290,21 +303,25 @@ export const reviews = [
   {
     imgURL: customer1,
     customerName: "Morich Brown",
-    rating: "Volunteer",
+    rating: "4",
+    position: "Volunteer",
     feedback:
       "Volunteering with PDA Africa has been the most interesting and exciting experience ever.",
   },
   {
     imgURL: customer2,
     customerName: "Lota Mongeskar",
-    rating: "Partner",
+    rating: "5",
+    position: "Partner",
+
     feedback:
       "Collaborating with PDA Africa has shown us how best we can serve the communities we find ourselves.",
   },
   {
     imgURL: customer3,
     customerName: "Jin Penge",
-    rating: "Staff",
+    rating: "4",
+    position: "Staff",
     feedback:
       "PDA Africa is a great place to spend your time, you feel as though your time on earth is really worth it!",
   },
@@ -312,7 +329,8 @@ export const reviews = [
   {
     imgURL: customer4,
     customerName: "Bitras Wesrad",
-    rating: "Benefactor",
+    rating: "5",
+    position: "Benefactor",
     feedback:
       "Their contributions and dedication to helping my community has really been life-changing",
   },
@@ -375,20 +393,21 @@ export const imageArray = [
   {
     src: Image4,
     alt: "Image 4",
-    title: "Forth Slide Title",
-    description: "This is the description for the forth slide.",
+    title: "",
+    description: "",
   },
   {
     src: Image5,
     alt: "Image 5",
-    title: "Fifth Slide Title",
-    description: "This is the description for the fifth slide.",
+    title: "",
+    description: "",
   },
 ];
 
 export const africaLinks = [
   { href: "#about-us", label: "About Us" },
   { href: "#projects", label: "Projects" },
+  { href: "#gallery", label: "Gallery" },
   { href: "#testimonials", label: "Testimonials" },
   { href: "#get-involved", label: "Get Involved" },
   { href: "#contact-us", label: "Contact Us" },
@@ -398,5 +417,55 @@ export const donateButton = [
   {
     label: "Donate now",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeMejX4CP15Iex2bcOJqUK5Uwub8rlTQdyyDLRy204_YzVfYA/viewform?embedded=true",
+  },
+];
+
+export const Data = [
+  {
+    img: vslaintro,
+    link: "https://www.youtube.com/embed/vE39_togVdE?si=HcVv6SYlF085aUew",
+    title: "Introduction of the VLSA/GALS Program to Farmer 2",
+    description: "",
+  },
+  {
+    img: vslagals,
+    link: "https://www.youtube.com/embed/iIA6YCYQK7s?list=PLlPBKRhN29Y_lkNipvQXeulZXczTnaBsF",
+    title: "Short video on VSLA/GALS project",
+    description: "",
+  },
+  {
+    img: child,
+    link: "https://www.youtube.com/embed/WP7Fqs8fNrI?si=3v7IvzEpyK9bhSRh",
+    title: "Child Labour",
+    description: "",
+  },
+  {
+    img: clpproject,
+    title: "An Impact Video (Cocoa Communities Library Project)",
+    description: "",
+  },
+  {
+    img: launch,
+    link: "https://www.youtube.com/embed/dIA1cnLkwA0?si=CqZnLdxEAFJPfDWA",
+    title: "Cocoa Communities Library Project Launch",
+    description: "",
+  },
+  {
+    img: female,
+    link: "https://www.youtube.com/embed/lpoBrrvidpw?si=4mrRKsG_-UBhU1Kp",
+    title: "The Experiences of Female-led Micro and Small scale enterprises",
+    description: "",
+  },
+  {
+    img: salomey,
+    link: "https://www.youtube.com/embed/CIpl6mAXpts?si=WsMgNxgNfjak-heh",
+    title: "The story of Salomey",
+    description: "",
+  },
+  {
+    img: abiba,
+    link: "https://www.youtube.com/embed/9ZgLBUB281o?si=lSSuj59gsGFl-HuD",
+    title: "The story of Abiba",
+    description: "",
   },
 ];

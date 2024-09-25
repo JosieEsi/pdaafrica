@@ -1,6 +1,6 @@
 import { star } from "../assets/icons";
 
-const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
+const ReviewCard = ({ imgURL, customerName, rating, position, feedback }) => {
   return (
     <div className="flex justify-center items-center flex-col">
       <img
@@ -21,7 +21,8 @@ const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
         />
         <p className="text-xl font-poppins text-slate-gray">({rating})</p>
       </div>
-      <h3 className="mt-1 font-poppins text-3xl text-center font-bold">
+      <p className="mt-2 text-2xl font-poppins text-slate-gray">{position}</p>
+      <h3 className=" font-poppins text-3xl text-center font-bold">
         {customerName}
       </h3>
     </div>

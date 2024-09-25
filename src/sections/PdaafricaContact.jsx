@@ -357,11 +357,11 @@ const Contacts = () => {
       className="max-container py-2 flex flex-wrap min-h-screen justify-center gap-14 max-sm:gap-2"
     >
       <div className="w-full flex justify-center flex-col">
-        <h2 className="text-orange font-bold text-xl text-center">
+        <h2 className="text-red font-bold text-xl text-center mb-5">
           Contact Us
         </h2>
         <h3 className="font-poppins text-4xl font-bold text-black leading-tight mb-5 text-center">
-          Feel Free To <span className="text-red">Contact & Reach </span>Us!
+          Feel Free To <span className="text-orange">Contact & Reach </span>Us!
         </h3>
       </div>
 

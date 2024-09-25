@@ -9,11 +9,12 @@ import {
   Partners,
   Footer,
   Aboutafrica,
-  Donate,
   Volunteer,
   Projects,
   CustomerReviews,
   PdaafricaContact,
+  AfricaGallery,
+  VideoGallery,
 } from "./sections";
 import Nav from "./components/Nav";
 import PDAAFRICA from "./pages/PDAAFRICA";
@@ -25,11 +26,8 @@ const App = () => {
 
   return (
     <main className="relative">
-      {/* <header>
-        <Nav />
-      </header> */}
       <header>
-        {location.pathname === "/pdaafrica" ? (
+        {location.pathname.startsWith("/pdaafrica") ? (
           <PDAAFRICAMenu /> // Render PDAAFRICA menu
         ) : (
           <Nav /> // Render home page menu
@@ -74,6 +72,12 @@ const App = () => {
           </section>
           <section className="padding bg-gray-200">
             <Projects />
+          </section>
+          <section className="padding">
+            <AfricaGallery />
+          </section>
+          <section className="padding">
+            <VideoGallery />
           </section>
           <section className="padding">
             <CustomerReviews />
