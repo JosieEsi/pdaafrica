@@ -489,6 +489,7 @@ import React, { useState } from "react";
 import { pdaLogo } from "../assets/images";
 import { africaLinks } from "../constants";
 import DonateForm from "./DonateForm";
+import { Link } from "react-router-dom";
 
 const PDAAFRICAMenu = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -525,12 +526,12 @@ const PDAAFRICAMenu = () => {
         <ul className="flex gap-8 text-base max-lg:hidden m">
           {africaLinks.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
+              <Link
+                to={item.href}
                 className="font-poppins leading-normal text-lg text-slate-gray"
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -570,15 +571,15 @@ const PDAAFRICAMenu = () => {
           <ul className="flex flex-col gap-8 text-xl items-center mt-2 mb-4">
             {africaLinks.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   onClick={() => {
                     toggleNavigation(); // Close the mobile menu after clicking
                   }}
                   className="font-poppins text-xl text-slate-gray"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
             <button

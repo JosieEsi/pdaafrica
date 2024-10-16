@@ -20,9 +20,21 @@ import Nav from "./components/Nav";
 import PDAAFRICA from "./pages/PDAAFRICA";
 import { Outlet, useLocation } from "react-router-dom";
 import PDAAFRICAMenu from "./components/PDAAFRICAMenu";
+import { useEffect } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <main className="relative">

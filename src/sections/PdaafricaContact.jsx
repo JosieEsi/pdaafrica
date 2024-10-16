@@ -365,7 +365,7 @@ const Contacts = () => {
         </h3>
       </div>
 
-      <div className="w-full md:w-1/2 lg:w-1/3 pl-2">
+      <div className="w-full md:w-1/2 lg:w-1/3">
         <div className="flex flex-col gap-3">
           {contacts.map((contact, index) => (
             <ContactCard key={index} {...contact} />

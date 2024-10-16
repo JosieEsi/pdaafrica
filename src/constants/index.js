@@ -68,9 +68,9 @@ import {
 
 export const navLinks = [
   { href: "./", label: "Home" },
-  { href: "#ethical-review-committee", label: "Ethical Review Committee" },
-  { href: "#child-abuse-tracker", label: "Child Abuse Tracker" },
-  { href: "#covid-19", label: "COVID 19" },
+  { href: "/ethical-review-committee", label: "Ethical Review Committee" },
+  { href: "/child-abuse-tracker", label: "Child Abuse Tracker" },
+  { href: "/covid-19", label: "COVID 19" },
   { href: "#partners", label: "Partners" },
   { href: "#events", label: "Events" },
 ];
@@ -78,17 +78,19 @@ export const navLinks = [
 export const navigation = [
   {
     title: "Who we are",
+    link: "/who-we-are",
     links: [
       { name: "Vision", link: "#vision" },
       { name: "Mission", link: "#mission" },
-      { name: "Teams", link: "#teams" },
-      { name: "Board", link: "#board" },
-      { name: "Staff", link: "#staff" },
+      { name: "Teams", link: "/teams" },
+      { name: "Board", link: "/board" },
+      { name: "Staff", link: "/staff" },
     ],
   },
 
   {
     title: "What we do",
+    link: "/",
     links: [
       { name: "Strategic Themes", link: "#strategic-themes" },
       { name: "Our Projects", link: "#our-projects" },
@@ -98,6 +100,7 @@ export const navigation = [
 
   {
     title: "Resources",
+    link: "/",
     links: [
       { name: "Publications", link: "#publications" },
       { name: "Podcast", link: "#podcast" },
@@ -109,6 +112,7 @@ export const navigation = [
 
   {
     title: "Impact",
+    link: "/",
     links: [
       { name: "Impact Stories", link: "#impact-stories" },
       { name: "Documentaries", link: "#documentaries" },
@@ -280,7 +284,8 @@ export const projects = [
     subtext:
       "Mobilizing, forming and training VSLA groups in communities for financial inclusion.",
     button: "Read More",
-    link: "https://pdaghana.com/pdas-financial-inclusion-programmes-in-sub-saharan-africa/",
+    // link: "https://pdaghana.com/pdas-financial-inclusion-programmes-in-sub-saharan-africa/",
+    link: "/pdaafrica/financial-inclusion-and-vsla",
   },
   {
     imgURL: cclp,
@@ -288,7 +293,8 @@ export const projects = [
     subtext:
       "Promoting literacy and reading habits among children in cocoa-growing communities.",
     button: "Read More",
-    link: "https://pdaghana.com/59840-2/",
+    // link: "https://pdaghana.com/59840-2/",
+    link: "/pdaafrica/cocoa-communities-library-project",
   },
   {
     imgURL: ncrp,
@@ -296,7 +302,8 @@ export const projects = [
     subtext:
       "Remediating identified child labour cases in the supply chain of Barry Callebaut (Nyonkopa).",
     button: "Read More",
-    link: "https://pdaghana.com/nyonkopa-child-labour-remediation-vsla/",
+    // link: "https://pdaghana.com/nyonkopa-child-labour-remediation-vsla/",
+    link: "/pdaafrica/nyonkopa-child-labour-remediation",
   },
 ];
 export const reviews = [
@@ -375,20 +382,22 @@ export const imageArray = [
   {
     src: Image1,
     alt: "Image 1",
-    title: "First Slide Title",
-    description: "This is the description for the first slide.",
+    title: "Welcome to PDA Africa",
+    description: "...everyone matters",
   },
   {
     src: Image2,
     alt: "Image 2",
-    title: "Second Slide Title",
-    description: "This is the description for the second slide.",
+    title: "",
+    description:
+      "A not-for-profit organisation which is responsible for the co-creation and design of community-led and community-driven development interventions with governments, the private sector and international development partners.",
   },
   {
     src: Image3,
     alt: "Image 3",
-    title: "Third Slide Title",
-    description: "This is the description for the third slide.",
+    title: "",
+    description:
+      "We view communities as agents of change and development partners, rather than as mere receivers of public and private goods and services or objects of charity",
   },
   {
     src: Image4,
@@ -405,12 +414,13 @@ export const imageArray = [
 ];
 
 export const africaLinks = [
-  { href: "#about-us", label: "About Us" },
-  { href: "#projects", label: "Projects" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#get-involved", label: "Get Involved" },
-  { href: "#contact-us", label: "Contact Us" },
+  { href: "/pdaafrica#about-us", label: "About Us" },
+  { href: "/pdaafrica#projects", label: "Projects" },
+  { href: "/pdaafrica#gallery", label: "Gallery" },
+  { href: "/pdaafrica#testimonials", label: "Testimonials" },
+  { href: "/pdaafrica#get-involved", label: "Get Involved" },
+  { href: "/pdaafrica/dataanalytics", label: "Impact" },
+  { href: "/pdaafrica#contact-us", label: "Contact Us" },
 ];
 
 export const donateButton = [

@@ -70,6 +70,24 @@ import CL from "./CL.jpg";
 import CR from "./CR.jpg";
 import vongoing from "./vongoing.jpg";
 
+import picture1 from "./picture1.png";
+import picture2 from "./picture2.png";
+
+import rand1 from "./rand1.jpg";
+import rand2 from "./rand2.jpg";
+import rand3 from "./rand3.jpg";
+import rand4 from "./rand4.jpg";
+import rand5 from "./rand5.jpg";
+import rand6 from "./rand6.jpg";
+import rand7 from "./rand7.jpg";
+import rand8 from "./rand8.jpg";
+import rand9 from "./rand9.jpg";
+import competition from "./competition.jpg";
+import reading from "./reading.jpg";
+import cluster from "./cluster.png";
+import whoweare from "./whoweare.png";
+import ethical from "./ethical.png";
+
 export {
   image1,
   image2,
@@ -135,4 +153,20 @@ export {
   CL,
   CR,
   vongoing,
+  picture1,
+  picture2,
+  rand1,
+  rand2,
+  rand3,
+  rand4,
+  rand5,
+  rand6,
+  rand7,
+  rand8,
+  rand9,
+  competition,
+  reading,
+  cluster,
+  ethical,
+  whoweare,
 };

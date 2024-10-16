@@ -34,9 +34,11 @@ const Menu = ({ onLinkClick }) => {
       <div className="flex flex-1 justify-between gap-10  max-sm:flex-row max-sm:gap-3 md:gap-6 flex-wrap max-sm:flex-nowrap">
         {navigation.map((section) => (
           <div key={section.title}>
-            <h4 className="font-poppins text-black font-semibold text-xl mb-10 md:text-base md:mb-5 max-sm:text-sm">
-              {section.title}
-            </h4>
+            <a href={section.link}>
+              <h4 className="font-poppins text-black font-semibold text-xl mb-10 md:text-base md:mb-5 max-sm:text-sm">
+                {section.title}
+              </h4>
+            </a>
             <ul>
               {section.links.map((link) => (
                 <li

@@ -127,10 +127,10 @@ const VideoGallery = () => {
   return (
     <section
       id="gallery"
-      className="flex max-container justify-center lg:mx-20 max-sm:mx-5"
+      className="flex max-container justify-center max-sm:mx-5"
     >
       <div className="bg-white w-full justify-center">
-        <div className="flex justify-between ml-10 max-sm:ml-0 max-sm:gap-7">
+        <div className="flex justify-between mx-20 max-sm:ml-0 max-sm:gap-7">
           <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
             Videos
           </h3>
@@ -138,11 +138,11 @@ const VideoGallery = () => {
             <Tab label="MORE VIDEOS" />
           </a>
         </div>
-        <div className="flex flex-row gap-3 justify-center mt-10 flex-wrap">
+        <div className="flex flex-row justify-center gap-3 mt-10 flex-wrap">
           {videos.map((video) => (
             <iframe
               key={video.id}
-              width="320"
+              width="370"
               height="250"
               src={`https://www.youtube.com/embed/${video.id}`}
               title={video.title}

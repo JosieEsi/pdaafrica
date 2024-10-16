@@ -266,6 +266,8 @@
 import React, { useState } from "react";
 import ApexCharts from "react-apexcharts";
 import { CL, CR, vongoing } from "../assets/images";
+import { sidebar, user } from "../assets/icons";
+import Chatbox from "./Chatbox";
 
 const Dashboard = () => {
   const [profileDropdown, setProfileDropdown] = useState(false);
@@ -308,28 +310,6 @@ const Dashboard = () => {
     },
   };
 
-  const pieOptions = {
-    series: [44, 55, 41, 17, 15],
-    chart: {
-      width: 380,
-      type: "pie",
-    },
-    labels: ["Age 5-10", "Age 11-15", "Age 16-18", "Male", "Female"],
-    responsive: [
-      {
-        breakpoint: 480,
-        options: {
-          chart: {
-            width: 100,
-          },
-          legend: {
-            position: "bottom",
-          },
-        },
-      },
-    ],
-  };
-
   const lineOptions = {
     series: [
       {
@@ -369,31 +349,61 @@ const Dashboard = () => {
     },
   };
 
+  const pieOptions = {
+    series: [44, 55, 41, 17, 15],
+    chart: {
+      width: 380,
+      type: "pie",
+    },
+    labels: ["Age 5-10", "Age 11-15", "Age 16-18", "Male", "Female"],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 100,
+          },
+          legend: {
+            position: "bottom",
+          },
+        },
+      },
+    ],
+  };
+
   return (
-    <div className="flex min-h-screen mt-32">
+    <section className="flex min-h-screen max-container mt-24">
       {/* Sidebar */}
-      <aside className={`bg-gray-800 p-4 ${sidebarOpen ? "w-64" : "w-20"}`}>
+      <aside
+        className={`bg-orange p-4 ${
+          sidebarOpen ? "w-64" : "w-20"
+        } max-sm:w-24 md:${sidebarOpen ? "w-48" : "w-16"} lg:${
+          sidebarOpen ? "w-64" : "w-20"
+        } transition-all duration-300`}
+      >
         <nav>
           <ul>
             <li className="text-white">
-              <button onClick={toggleSidebar}>Toggle Sidebar</button>
+              <button onClick={toggleSidebar}>
+                <img src={sidebar} alt="sidebar" className="w-10 h-10 " />
+              </button>
             </li>
             <ul className="mt-6">
               {[1, 2, 3].map((i) => (
                 <li key={i} className="mb-4">
                   <a
                     href="#"
-                    className="block py-2 px-4 hover:bg-gray-700"
+                    className="py-2 hover:bg-white"
                     onClick={() => handleDropdownClick(i)}
                   >
                     Menu {i}
                   </a>
                   {activeDropdown === i && (
                     <div className="pl-4 mt-2">
-                      <a href="#" className="block py-1 px-2 hover:bg-gray-700">
+                      <a href="#" className="block py-1 px-2 hover:bg-white ">
                         Submenu 1
                       </a>
-                      <a href="#" className="block py-1 px-2 hover:bg-gray-700">
+                      <a href="#" className="block py-1 px-2 hover:bg-white">
                         Submenu 2
                       </a>
                     </div>
@@ -415,9 +425,9 @@ const Dashboard = () => {
           {/* Profile Section */}
           <div className="relative">
             <img
-              src="https://via.placeholder.com/40"
+              src={user}
               alt="Profile"
-              className="cursor-pointer"
+              className="cursor-pointer w-10 h-10 rounded-full"
               onClick={toggleProfileDropdown}
             />
             {profileDropdown && (
@@ -435,23 +445,37 @@ const Dashboard = () => {
 
         <main>
           {/* Project Status Section */}
-          <section className="project-status my-6">
+          <section className="project-status my-6 ">
             <h1 className="text-xl font-semibold mb-4">Projects</h1>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid lg:grid-cols-3 gap-4 max-sm:grid-cols-1 md:grid-cols-2">
               <div className="card bg-gray-100 p-4 rounded-lg">
-                <img src={vongoing} alt="VSLA" className="rounded-lg" />
-                <p className="title font-bold">VSLA</p>
-                <p className="status text-gray-600">Ongoing</p>
-              </div>
-              <div className="card bg-purple-100 p-4 rounded-lg">
-                <img src={CL} alt="Child Labour" className="rounded-lg" />
-                <p className="title font-bold">Child Labour</p>
-                <p className="status text-gray-600">Ongoing</p>
+                <img
+                  src={vongoing}
+                  alt="VSLA"
+                  className="rounded-full w-20 h-20"
+                />
+                <p className="text-center text-3xl font-bold">VSLA</p>
+                <p className="text-center text-gray-600">Ongoing</p>
               </div>
               <div className="card bg-gray-100 p-4 rounded-lg">
-                <img src={CR} alt="Community Reading" className="rounded-lg" />
-                <p className="title font-bold">Community Reading</p>
-                <p className="status text-gray-600">Ongoing</p>
+                <img
+                  src={CL}
+                  alt="Child Labour"
+                  className="rounded-full w-20 h-20"
+                />
+                <p className="text-center text-3xl font-bold">Child Labour</p>
+                <p className="text-center text-gray-600">Ongoing</p>
+              </div>
+              <div className="card bg-gray-100 p-4 rounded-lg">
+                <img
+                  src={CR}
+                  alt="Community Reading"
+                  className="rounded-full w-20 h-20"
+                />
+                <p className="text-center text-3xl font-bold">
+                  Community Reading
+                </p>
+                <p className="text-center text-gray-600">Ongoing</p>
               </div>
             </div>
           </section>
@@ -473,7 +497,7 @@ const Dashboard = () => {
           </ul>
 
           {/* Info Data Section */}
-          <div className="grid grid-cols-3 gap-6 my-6">
+          <div className="grid lg:grid-cols-3 gap-6 my-6 max-sm:grid-cols-1 md:grid-cols-2">
             <div className="card-container bg-white p-6 rounded-lg shadow-lg">
               <h2 className="text-3xl font-bold">1500</h2>
               <p className="text-gray-500">Number of readers</p>
@@ -489,8 +513,11 @@ const Dashboard = () => {
           </div>
 
           {/* Charts */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid lg:grid-cols-2 gap-6 md:grid-cols-1">
             <div id="chart" className="bg-white p-6 rounded-lg shadow-lg">
+              <p className="font-poppins text-base">
+                VSLA Contributions over the year
+              </p>
               <ApexCharts
                 options={chartOptions}
                 series={chartOptions.series}
@@ -499,19 +526,10 @@ const Dashboard = () => {
               />
             </div>
 
-            <div id="pieChart" className="bg-white p-6 rounded-lg shadow-lg">
-              <ApexCharts
-                options={pieOptions}
-                series={pieOptions.series}
-                type="pie"
-                width={380}
-              />
-            </div>
-
-            <div
-              id="lineChart"
-              className="bg-white p-6 rounded-lg shadow-lg col-span-2"
-            >
+            <div id="lineChart" className="bg-white p-6 rounded-lg shadow-lg ">
+              <p className="font-poppins text-base">
+                Community Reading Participant
+              </p>
               <ApexCharts
                 options={lineOptions}
                 series={lineOptions.series}
@@ -519,10 +537,28 @@ const Dashboard = () => {
                 height={150}
               />
             </div>
+
+            <div
+              id="pieChart"
+              className="bg-white p-6 rounded-lg shadow-lg h-auto"
+            >
+              <p className="font-poppins text-base">
+                Demographics of child labour
+              </p>
+              <ApexCharts
+                options={pieOptions}
+                series={pieOptions.series}
+                type="pie"
+                width={380}
+              />
+            </div>
+          </div>
+          <div className="mt-6">
+            <Chatbox />
           </div>
         </main>
       </div>
-    </div>
+    </section>
   );
 };
 

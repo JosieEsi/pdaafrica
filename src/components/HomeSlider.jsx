@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { imageArray } from "../constants"; // Your array of images
+import { picture1, picture2 } from "../assets/images";
 
 const HomeSlider = () => {
   const settings = {
@@ -35,15 +36,17 @@ const HomeSlider = () => {
         ))}
 
         {/* Display first iframe */}
-        <div className="w-full h-[550px] flex items-center justify-center pt-28">
+        <div className="w-full h-[550px] flex items-center justify-center pt-28  ">
           <iframe
             title="IA VSLA"
             width="100%"
             height="100%"
             src="https://app.powerbi.com/reportEmbed?reportId=0676b2fd-7dd2-4907-a521-d8dcb6e12fc2&autoAuth=true&ctid=e1c407f4-37ce-4d63-861f-b50872c0d662"
+            // src={picture2}
             frameBorder="0"
             allowFullScreen
           ></iframe>
+          <img src={picture2} alt="" />
         </div>
 
         {/* Display second iframe */}
@@ -53,6 +56,7 @@ const HomeSlider = () => {
             width="100%"
             height="100%"
             src="https://app.powerbi.com/reportEmbed?reportId=2f0c1f4f-2c7b-44e8-b00b-f3847e7d51e6&autoAuth=true&ctid=e1c407f4-37ce-4d63-861f-b50872c0d662"
+            // src={picture1}
             frameBorder="0"
             allowFullScreen
           ></iframe>

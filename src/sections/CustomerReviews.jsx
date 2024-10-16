@@ -25,7 +25,7 @@ const CustomerReviews = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <section className="max-container justify-center" id="testimonials">
+    <section className="max-container justify-center px-4" id="testimonials">
       <h2 className="text-red font-bold text-xl text-center mb-5 font-poppins">
         Testimonials
       </h2>

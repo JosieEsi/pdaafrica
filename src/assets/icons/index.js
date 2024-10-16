@@ -26,6 +26,12 @@ import star from "./star.svg";
 import call from "./call.svg";
 import email from "./email.svg";
 import location from "./location.svg";
+import sidebar from "./sidebar.svg";
+import user from "./user.png";
+import bulb from "./bulb.svg";
+import dart from "./dart.svg";
+import peak from "./peak.svg";
+import puzzle from "./puzzle.svg";
 
 export {
   arrowLeft,
@@ -55,4 +61,10 @@ export {
   call,
   email,
   location,
+  sidebar,
+  user,
+  peak,
+  puzzle,
+  dart,
+  bulb,
 };

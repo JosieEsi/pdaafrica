@@ -8,6 +8,14 @@ import PDAAFRICA from "./pages/PDAAFRICA.jsx";
 import DonateForm from "./components/DonateForm.jsx"; // Import the DonateForm component
 import ThankYouPage from "./components/ThankYouPage.jsx"; // Import the ThankYou component
 import DataAnalytics from "./pages/DataAnalytics.jsx";
+import CCLP from "./pages/CCLP.jsx";
+import Nyonkopa from "./pages/Nyonkopa.jsx";
+import VSLA from "./pages/VSLA.jsx";
+import WhoWeAre from "./pages/WhoWeAre.jsx";
+import EthicalReviewCommittee from "./pages/EthicalReviewCommittee.jsx";
+import Staff from "./pages/Staff.jsx";
+import Teams from "./pages/Teams.jsx";
+import ChildAbuseTracker from "./pages/ChildAbuseTracker.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +25,18 @@ const router = createBrowserRouter([
       {
         path: "/pdaafrica/dataanalytics",
         element: <DataAnalytics />,
+      },
+      {
+        path: "/pdaafrica/cocoa-communities-library-project",
+        element: <CCLP />,
+      },
+      {
+        path: "/pdaafrica/nyonkopa-child-labour-remediation",
+        element: <Nyonkopa />,
+      },
+      {
+        path: "/pdaafrica/financial-inclusion-and-vsla",
+        element: <VSLA />,
       },
       {
         path: "/contact",
@@ -33,6 +53,26 @@ const router = createBrowserRouter([
       {
         path: "/thank-you", // Route for the thank-you page after donation
         element: <ThankYouPage />,
+      },
+      {
+        path: "/who-we-are",
+        element: <WhoWeAre />,
+      },
+      {
+        path: "/staff",
+        element: <Staff />,
+      },
+      {
+        path: "/teams",
+        element: <Teams />,
+      },
+      {
+        path: "/ethical-review-committee",
+        element: <EthicalReviewCommittee />,
+      },
+      {
+        path: "/child-abuse-tracker",
+        element: <ChildAbuseTracker />,
       },
     ],
   },
