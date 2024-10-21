@@ -44,7 +44,7 @@ const WhoWeAre = () => {
           </p>
         </div>
       </div>
-      <div className="bg-gray-200 w-1/2 rounded-lg h-48 mb-10 ml-64 flex flex-row px-10 py-10">
+      <div className="bg-gray-200 w-1/2 rounded-lg h-48 mb-10 ml-64 flex flex-row px-10 py-10 ">
         <div className="flex flex-col w-full">
           <img src={peak} alt="" className="h-20 w-20" />
 

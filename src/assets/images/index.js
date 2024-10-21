@@ -87,6 +87,9 @@ import reading from "./reading.jpg";
 import cluster from "./cluster.png";
 import whoweare from "./whoweare.png";
 import ethical from "./ethical.png";
+import eleanor from "./dr_eleanor_hill 1.png";
+import akosua from "./prof_Akosua 1.png";
+import tony from "./tony 1.png";
 
 export {
   image1,
@@ -169,4 +172,7 @@ export {
   cluster,
   ethical,
   whoweare,
+  tony,
+  akosua,
+  eleanor,
 };
