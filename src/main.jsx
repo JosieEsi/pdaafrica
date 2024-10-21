@@ -16,6 +16,7 @@ import EthicalReviewCommittee from "./pages/EthicalReviewCommittee.jsx";
 import Staff from "./pages/Staff.jsx";
 import Teams from "./pages/Teams.jsx";
 import ChildAbuseTracker from "./pages/ChildAbuseTracker.jsx";
+import Covid19 from "./pages/Covid19.jsx";
 
 const router = createBrowserRouter([
   {
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
       {
         path: "/child-abuse-tracker",
         element: <ChildAbuseTracker />,
+      },
+      {
+        path: "/covid-19",
+        element: <Covid19 />,
       },
     ],
   },

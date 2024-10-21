@@ -90,6 +90,15 @@ import ethical from "./ethical.png";
 import eleanor from "./dr_eleanor_hill 1.png";
 import akosua from "./prof_Akosua 1.png";
 import tony from "./tony 1.png";
+import covid from "./covid.png";
+import childabuse from "./childabuse.png";
+import abusecase from "./abusecase.png";
+import annabelle from "./annabelle.png";
+import ampah from "./ampah.png";
+import alex from "./alex.png";
+import edem from "./edem.png";
+import kamil from "./kamil.png";
+import raymond from "./raymond.png";
 
 export {
   image1,
@@ -175,4 +184,13 @@ export {
   tony,
   akosua,
   eleanor,
+  covid,
+  childabuse,
+  abusecase,
+  raymond,
+  annabelle,
+  kamil,
+  alex,
+  edem,
+  ampah,
 };

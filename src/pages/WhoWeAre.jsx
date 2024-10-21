@@ -8,7 +8,7 @@ import { bulb } from "../assets/icons";
 const WhoWeAre = () => {
   return (
     <section id="whoweare" className="max-container w-full min-h-screen ">
-      <div className="mt-24 relative">
+      <div className="mt-24 relative w-full">
         <img src={whoweare} className="w-full" alt="" />
         <h1 className="font-poppins font-bold text-4xl text-white text-center absolute bottom-20 pl-48">
           Who we are

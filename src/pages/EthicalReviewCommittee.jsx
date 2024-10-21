@@ -9,12 +9,12 @@ const EthicalReviewCommittee = () => {
       id="ethical-review-committee"
       className="max-container w-full min-h-screen"
     >
-      <div className="mt-28 w-full">
-        <img src={ethical} alt="" />
+      <div className="mt-24 w-full">
+        <img src={ethical} alt="" className="w-full" />
       </div>
-      <div className="mt-10 w-3/4 h-48 bg-gray-200 mb-10 flex  items-center align-middle ml-40 pl-10 rounded-3xl ">
+      <div className="mt-10 w-5/6 h-48 bg-gray-200 mb-10 flex items-center rounded-3xl max-w-7xl mx-auto flex-col lg:flex-row justify-between space-y-6 lg:space-y-0 lg:space-x-10 px-4 lg:px-0">
         <div className="flex">
-          <img src={tony} alt="" className="h-32 w-32 rounded-full " />
+          <img src={tony} alt="" className="h-32 w-32 rounded-full ml-10" />
           <div className="flex-row pl-5 items-center mt-8">
             <h1 className="font-poppins text-lg font-bold pb-1">TONY DOGBE</h1>
             <img src={line} alt="" className="pb-1" />
@@ -32,7 +32,7 @@ const EthicalReviewCommittee = () => {
         </div>
 
         <div className="flex ml-10">
-          <img src={akosua} alt="" className="h-32 w-32 rounded-full " />
+          <img src={akosua} alt="" className="h-32 w-32 rounded-full ml-10" />
           <div className="flex-row pl-5 items-center mt-4">
             <h1 className="font-poppins text-lg font-bold pb-1">
               PROF. AKOSUA ADOMAKO
@@ -52,8 +52,8 @@ const EthicalReviewCommittee = () => {
         </div>
 
         <div className="flex pr-5">
-          <img src={eleanor} alt="" className="h-32 w-32 rounded-full " />
-          <div className="flex-row pl-5 items-center mt-4">
+          <img src={eleanor} alt="" className="h-32 w-32 rounded-full" />
+          <div className="flex-row pl-5 items-center mt-4 mr-10">
             <h1 className="font-poppins text-lg font-bold pb-1">
               DR. ELEANOR HILL
             </h1>
@@ -72,8 +72,8 @@ const EthicalReviewCommittee = () => {
         </div>
       </div>
 
-      <div className="mt-20 grid grid-cols-2 padding ml-28 ">
-        <div className="">
+      <div className="mt-20 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 px-3 lg:px-0 mb-20">
+        <div className="lg:col-span-2 ml-6 mr-14">
           <h1 className="font-poppins font-bold text-4xl">
             Overview of the ERC
           </h1>
@@ -111,11 +111,11 @@ const EthicalReviewCommittee = () => {
             importance to its development outcomes. In particular, PDA believes
             that the dignity, rights, safety and well-being of both participants
             and researchers is important in any research process that PDA
-            undertakes.{" "}
+            undertakes.
           </p>
           <p className="font-poppins text-base pt-5 leading-6">
             <span className="font-poppins text-base font-bold">
-              . Inclusiveness:{" "}
+              . Inclusiveness:
             </span>
             we believe everyone has an active role to play in realising social
             change and so it is important that any piece of research has
@@ -148,21 +148,38 @@ const EthicalReviewCommittee = () => {
             learning organisation. We believe that ethical review processes
             should provide a framework for those involved to learn together.
           </p>
-        </div>
-        <div>
-          <img src={line2} alt="" className="mt-24 px-20" />
+          {/* <img src={line2} alt="" className="mt-24 " /> */}
         </div>
 
-        <div className="grid ">
-          <div className="w-full h-28 bg-gray-200 flex flex-row">
-            <img src={paper} alt="" />
-            <h1 className="font-poppins text-base px-5  text-center align-middle">
-              Preliminary Screening Tool
-            </h1>
-            <Button
-              label="Download"
-              className="flex items-center justify-center"
-            />
+        <div>
+          <div className="space-y-6 mt-20">
+            <div className="w-full bg-gray-200 flex items-center p-4 rounded-lg">
+              <img src={paper} alt="Document" className="h-8" />
+              <div className="ml-2 flex-grow">
+                <p className="font-poppins text-base">
+                  Preliminary Screening Tool
+                </p>
+              </div>
+              <Button label="Download" />
+            </div>
+
+            <div className="w-full bg-gray-200 flex items-center p-4 rounded-lg">
+              <img src={paper} alt="Document" className="h-8" />
+              <div className="ml-2 flex-grow">
+                <p className="font-poppins text-base">
+                  ERC Guidelines for Applicants
+                </p>
+              </div>
+              <Button label="Download" />
+            </div>
+
+            <div className="w-full bg-gray-200 flex items-center p-4 rounded-lg">
+              <img src={paper} alt="Document" className="h-8" />
+              <div className="ml-2 flex-grow">
+                <p className="font-poppins text-base">ERC Application Form</p>
+              </div>
+              <Button label="Download" />
+            </div>
           </div>
         </div>
       </div>
