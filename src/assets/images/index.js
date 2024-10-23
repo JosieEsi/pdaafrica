@@ -99,6 +99,9 @@ import alex from "./alex.png";
 import edem from "./edem.png";
 import kamil from "./kamil.png";
 import raymond from "./raymond.png";
+import africateam1 from "./africateam1.png";
+import relteam from "./relteam.png";
+import acuteam from "./acuteam.png";
 
 export {
   image1,
@@ -193,4 +196,7 @@ export {
   alex,
   edem,
   ampah,
+  africateam1,
+  relteam,
+  acuteam,
 };
