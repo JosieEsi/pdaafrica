@@ -12,10 +12,10 @@ const Covid19 = () => {
       <div className="mt-24 w-full">
         <img src={covid} alt="" className="w-full" />
       </div>
-      <div className="flex my-10 mx-10 ml-20">
+      <div className="flex my-10 mx-10 ml-40">
         <Tab label="COVID 19 SERIES" />
       </div>
-      <div className="space-y-6 mx-auto mb-20">
+      <div className="space-y-6 mx-auto mb-20 lg:ml-20 lg:mr-20">
         <div className="bg-gray-200 w-5/6 h-28 ml-20 mb-10 flex items-center justify-between px-10 font-poppins ">
           <p>12 APRIL, 2022</p>
           <p className="font-bold">COVID-19; A THREAT TO FOOD SECURITY</p>

@@ -9,9 +9,14 @@ const EthicalReviewCommittee = () => {
       id="ethical-review-committee"
       className="max-container w-full min-h-screen"
     >
-      <div className="mt-24 w-full">
-        <img src={ethical} alt="" className="w-full" />
+      <div className="mt-24 relative w-full bg-cover">
+        <img src={ethical} alt="" className="w-full h-auto object-cover " />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+        <h1 className="font-poppins font-bold text-4xl text-white text-center absolute bottom-20 pl-48">
+          Ethical Review Committee
+        </h1>
       </div>
+
       <div className="mt-10 w-5/6 h-48 bg-gray-200 mb-10 flex items-center rounded-3xl max-w-7xl mx-auto flex-col lg:flex-row justify-between space-y-6 lg:space-y-0 lg:space-x-10 px-4 lg:px-0">
         <div className="flex">
           <img src={tony} alt="" className="h-32 w-32 rounded-full ml-10" />
@@ -102,8 +107,8 @@ const EthicalReviewCommittee = () => {
           </p>
           <p className="font-poppins text-base leading-6">
             <span className="font-poppins text-base font-bold">
-              . Empowerment:
-            </span>
+              . Empowerment:{" "}
+            </span>{" "}
             we believe that research should be an enlightening process for all
             involved, not simply an extractive exercise undertaken for the
             benefit of others. Paying attention to how a research process
@@ -115,8 +120,8 @@ const EthicalReviewCommittee = () => {
           </p>
           <p className="font-poppins text-base pt-5 leading-6">
             <span className="font-poppins text-base font-bold">
-              . Inclusiveness:
-            </span>
+              . Inclusiveness:{" "}
+            </span>{" "}
             we believe everyone has an active role to play in realising social
             change and so it is important that any piece of research has
             carefully considered which voices are listened to, and why.
@@ -124,7 +129,9 @@ const EthicalReviewCommittee = () => {
             group of people to think more carefully, creatively and deeply.
           </p>
           <p className="font-poppins text-base pt-5 leading-6">
-            <span className="font-poppins text-base font-bold">. Quality:</span>
+            <span className="font-poppins text-base font-bold">
+              . Quality:{" "}
+            </span>{" "}
             review can help us, and others, to maintain and improve our research
             standards. In doing this we can also affect ethical standards in
             Ghana more widely. Efficiency: review can identify ways in which all
@@ -133,15 +140,15 @@ const EthicalReviewCommittee = () => {
           </p>
           <p className="font-poppins text-base pt-5 leading-6">
             <span className="font-poppins text-base font-bold">
-              . Effectiveness and Impact:
-            </span>
+              . Effectiveness and Impact:{" "}
+            </span>{" "}
             a well-honed research process is more likely to leave a lasting
             effect.
           </p>
           <p className="font-poppins text-base pt-5 leading-6">
             <span className="font-poppins text-base font-bold">
-              . Transparency and accountability:
-            </span>
+              . Transparency and accountability:{" "}
+            </span>{" "}
             ethical review helps to make research processes more accountable, to
             ourselves as researchers, to participants in the research, as well
             as to those who commission it. PDA is also committed to being a

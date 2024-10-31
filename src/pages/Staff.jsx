@@ -415,42 +415,43 @@ const Staff = () => {
         </div>
 
         {/* Middle Row with unified background */}
-        <div className="lg:col-span-2 flex flex-col lg:flex-row justify-between items-center lg:items-start p-8 rounded-lg bg-gray-100 shadow-lg space-y-4 lg:space-y-0 lg:space-x-12">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
-            <img
-              src={annabelle}
-              alt="Annabelle Y. Osei"
-              className="h-36 w-36 rounded-full object-cover"
-            />
-            <div className="text-center lg:text-left">
-              <h2 className="font-poppins font-bold text-lg">
-                ANNABELLE Y. OSEI
-              </h2>
-              <p className="font-poppins text-base">Director of Operations</p>
-              <a href="#" className="text-orange font-bold text-sm">
-                Read More
-              </a>
-            </div>
-          </div>
+        {/* <div className="lg:col-span-2 flex flex-col lg:flex-row justify-between items-center lg:items-start p-8 rounded-lg bg-gray-100 shadow-lg space-y-4 lg:space-y-0 lg:space-x-12"> */}
 
-          <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
-            <img
-              src={ampah}
-              alt="Victoria Ampah"
-              className="h-36 w-36 rounded-full object-cover"
-            />
-            <div className="text-center lg:text-left">
-              <h2 className="font-poppins font-bold text-lg">VICTORIA AMPAH</h2>
-              <p className="font-poppins text-base">Senior Finance Officer</p>
-              <a href="#" className="text-orange font-bold text-sm">
-                Read More
-              </a>
-            </div>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
+          <img
+            src={annabelle}
+            alt="Annabelle Y. Osei"
+            className="h-36 w-36 rounded-full object-cover"
+          />
+          <div className="text-center lg:text-left">
+            <h2 className="font-poppins font-bold text-lg">
+              ANNABELLE Y. OSEI
+            </h2>
+            <p className="font-poppins text-base">Director of Operations</p>
+            <a href="#" className="text-orange font-bold text-sm">
+              Read More
+            </a>
           </div>
         </div>
 
-        {/* Third Row */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
+          <img
+            src={ampah}
+            alt="Victoria Ampah"
+            className="h-36 w-36 rounded-full object-cover"
+          />
+          <div className="text-center lg:text-left">
+            <h2 className="font-poppins font-bold text-lg">VICTORIA AMPAH</h2>
+            <p className="font-poppins text-base">Senior Finance Officer</p>
+            <a href="#" className="text-orange font-bold text-sm">
+              Read More
+            </a>
+          </div>
+        </div>
+        {/* </div> */}
+
+        {/* Third Row */}
+        <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6 mb-10">
           <img
             src={kamil}
             alt="Kamil Abdul Salam"
