@@ -174,7 +174,7 @@ import React from "react";
 import { FaBook, FaChild, FaSchool, FaChartLine } from "react-icons/fa"; // Icons
 import { FiBox } from "react-icons/fi";
 import { IoIosPeople } from "react-icons/io";
-import { competition, reading, cluster } from "../assets/images";
+import { competition, reading, cluster, library } from "../assets/images";
 import QuickStats from "../components/QuickStats";
 
 const CCLP = () => {
@@ -211,69 +211,69 @@ const CCLP = () => {
         {/* Hero Text Content */}
         <div className="relative flex items-end justify-center h-full pb-12 text-center animate-fade-in">
           <div className="text-white">
-            <h1 className="font-poppins font-bold text-4xl text-orange">
+            <h1 className="font-poppins font-bold text-6xl text-orange">
               Cocoa Communities Library Project
             </h1>
-            <p className="text-gray-300 mt-4 px-4 md:px-12">
-              A 2-year initiative by Participatory Development Associates (PDA)
-              in partnership with Magic Libraries Foundation. It aims to promote
-              reading literacy among children in cocoa-growing communities in
-              Ghana.
+            <p className="text-xl mt-4 mb-5 font-poppins">
+              Improving reading literacy among children in cocoa growing
+              communities
             </p>
           </div>
         </div>
       </div>
-      {/* Quick Stats Section */}
-      {/* <div className="py-12 bg-gray-100">
-        <h2 className="font-poppins font-semibold text-2xl text-center text-gray-800 mb-8">
-          Quick Stats
-        </h2>
-        <div className="flex flex-col md:flex-row justify-evenly items-center gap-8">
-          <div className="w-full md:w-1/2 bg-white p-6 shadow-md rounded-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-            <h3 className="font-semibold text-xl text-blue-600 flex items-center">
-              <FaBook className="mr-2" /> Reading Clubs Participation
-            </h3>
-            <ul className="list-disc list-inside text-gray-700 mt-4">
-              <li>
-                1129 children participate in the reading clubs across 10 project
-                communities.
-              </li>
-              <li>579 children attend weekly reading sessions.</li>
-              <li>148.7% increase in reading club membership since 2023.</li>
-              <li>Reading club attendance has increased by 34.99%.</li>
-            </ul>
-          </div>
 
-          <div className="w-full md:w-1/2 bg-white p-6 shadow-md rounded-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-            <h3 className="font-semibold text-xl text-blue-600 flex items-center">
-              <FaChild className="mr-2" /> Gender and Age Distribution
-            </h3>
-            <ul className="list-disc list-inside text-gray-700 mt-4">
-              <li>
-                Clubs meet 2 to 3 times weekly to manage large attendance.
+      <QuickStats />
+
+      {/* Project Components Section */}
+      <div className="py-12 ">
+        <h2 className="font-poppins font-semibold text-2xl text-center text-red mb-8">
+          Project Objectives
+        </h2>
+        <div className="grid grid-cols-2">
+          <img
+            src={library}
+            alt="Reading Festival"
+            className="mx-auto mt-8 rounded-lg shadow-lg w-full h-3/5 md:w-8/12 animate-slide-in"
+          />
+          <div className="px-4 ml-10 pt-14 animate-slide-in">
+            <ul className="list-disc list-inside text-gray-700 leading-relaxed font-poppins">
+              <li className="flex items-center">
+                <FaSchool className="mr-2 text-orange" /> Renovation of 2
+                libraries in cocoa-growing communities.
               </li>
-              <li>
-                Upper primary students participate more than lower primary
-                students.
+              <li className="flex items-center mt-2">
+                <IoIosPeople className="mr-2 text-orange" /> Establishing
+                community reading clubs and weekly reading activities.
               </li>
-              <li>
-                More female children are involved in the reading clubs than
-                males.
+              <li className="flex items-center mt-2">
+                <FaBook className="mr-2 text-orange" /> Purchasing and
+                distributing 5000 books.
+              </li>
+              <li className="flex items-center mt-2">
+                <FiBox className="mr-2 text-orange" /> Providing
+                "Library-in-a-Box" kits to communities.
+              </li>
+              <li className="flex items-center mt-2">
+                <FaChartLine className="mr-2 text-orange" /> Organizing reading
+                competitions for children.
+              </li>
+              <li className="flex items-center mt-2">
+                <IoIosPeople className="mr-2 text-orange" /> Engaging
+                stakeholders for project sustainability.
               </li>
             </ul>
           </div>
         </div>
-      </div> */}
-      <QuickStats />
+      </div>
 
       {/* Project Goals Section */}
-      <div className="py-12">
-        <h2 className="font-poppins font-semibold text-2xl text-center text-orange mb-8">
+      <div className="py-12 bg-gray-100">
+        <h2 className="font-poppins font-semibold text-2xl text-center text-red mb-8">
           Rationale for Reading Festival & Competitions
         </h2>
         <div className="grid grid-cols-2">
-          <div className="px-4 ml-20 pt-10 animate-slide-in ">
-            <ul className="list-disc list-inside text-gray-700 leading-relaxed font-poppins">
+          <div className="px-4 ml-20 pt-5 animate-slide-in ">
+            <ul className="list-disc list-inside text-gray-700 leading-8 font-poppins">
               <li>
                 Ignite the interest of children toward reading and a love for
                 books.
@@ -299,48 +299,13 @@ const CCLP = () => {
         </div>
       </div>
 
-      {/* Project Components Section */}
-      <div className="py-12 bg-gray-100">
-        <h2 className="font-poppins font-semibold text-2xl text-center text-gray-800 mb-8">
-          Key Components of the Project
-        </h2>
-        <div className="max-w-5xl mx-auto px-4">
-          <ul className="list-disc list-inside text-gray-700 leading-relaxed">
-            <li className="flex items-center">
-              <FaSchool className="mr-2 text-orange" /> Renovation of 2
-              libraries in cocoa-growing communities.
-            </li>
-            <li className="flex items-center mt-2">
-              <IoIosPeople className="mr-2 text-orange" /> Establishing
-              community reading clubs and weekly reading activities.
-            </li>
-            <li className="flex items-center mt-2">
-              <FaBook className="mr-2 text-orange" /> Purchasing and
-              distributing 5000 books.
-            </li>
-            <li className="flex items-center mt-2">
-              <FiBox className="mr-2 text-orange" /> Providing
-              "Library-in-a-Box" kits to communities.
-            </li>
-            <li className="flex items-center mt-2">
-              <FaChartLine className="mr-2 text-orange" /> Organizing reading
-              competitions for children.
-            </li>
-            <li className="flex items-center mt-2">
-              <IoIosPeople className="mr-2 text-orange" /> Engaging stakeholders
-              for project sustainability.
-            </li>
-          </ul>
-        </div>
-      </div>
-
       {/* Reading Competition Flow Section */}
       <div className="py-12">
-        <h2 className="font-poppins font-semibold text-2xl text-center text-orange mb-8">
+        <h2 className="font-poppins font-semibold text-3xl text-center text-red mb-8">
           Reading Festival & Competitions Structure
         </h2>
         <div className="max-w-5xl mx-auto">
-          <p className="text-gray-700 text-center mb-8">
+          <p className="text-gray-700 text-center mb-8 font-poppins">
             Schools within clusters 'A' and 'B' compete for the Reading Champion
             position, inspiring students to achieve excellence in literacy.
           </p>
@@ -356,7 +321,7 @@ const CCLP = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-4 mt-8">
+      {/* <footer className="bg-gray-800 text-white py-4 mt-8">
         <div className="text-center">
           <p>© 2024 PDA Ghana | Cocoa Communities Library Project</p>
           <a
@@ -366,7 +331,7 @@ const CCLP = () => {
             www.pdaghana.com
           </a>
         </div>
-      </footer>
+      </footer> */}
     </section>
   );
 };

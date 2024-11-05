@@ -102,6 +102,10 @@ import raymond from "./raymond.png";
 import africateam1 from "./africateam1.png";
 import relteam from "./relteam.png";
 import acuteam from "./acuteam.png";
+import slide from "./slidernynkopa.mp4";
+import modul from "./modul.jpg";
+import finan from "./finan.jpg";
+import library from "./library.jpg";
 
 export {
   image1,
@@ -199,4 +203,8 @@ export {
   africateam1,
   relteam,
   acuteam,
+  slide,
+  modul,
+  finan,
+  library,
 };

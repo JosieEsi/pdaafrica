@@ -116,21 +116,26 @@ import CountUp from "react-countup"; // Animated Numbers
 
 const QuickStats = () => {
   return (
-    <section className="py-12 bg-gray-100">
-      <h2 className="font-poppins font-semibold text-2xl text-center text-gray-800 mb-8">
-        Quick Stats
+    <section className="py-12 bg-gray-100 font-poppins">
+      <h2 className="font-poppins font-semibold text-3xl text-center text-red mb-8">
+        About the Project
       </h2>
+      <p className="text-gray-600 mt-4 px-4 md:px-12 font-poppins text-base text-center ">
+        A 2-year initiative by Participatory Development Associates (PDA) in
+        partnership with Magic Libraries Foundation. It aims to promote reading
+        literacy among children in cocoa-growing communities in Ghana.
+      </p>
 
       {/* Flex container to display stats side-by-side */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
         {/* Child Participation */}
         <div className="flex flex-col items-center justify-center p-6 hover:scale-110 transform transition-all duration-300">
-          <FaChild className="text-6xl text-orange mb-4" />
+          <FaChild className="text-4xl text-orange mb-4" />
           <CountUp
             start={0}
             end={1129}
             duration={2}
-            className="text-4xl font-bold text-red"
+            className="text-4xl font-bold text-orange"
           />
           <p className="text-gray-700 mt-4 text-center">
             Children participate in the reading clubs across 10 project
@@ -140,27 +145,27 @@ const QuickStats = () => {
 
         {/* Weekly Reading Sessions */}
         <div className="flex flex-col items-center justify-center p-6 hover:scale-110 transform transition-all duration-300">
-          <FaCalendarAlt className="text-6xl text-orange mb-4" />
+          <FaCalendarAlt className="text-4xl text-orange mb-4" />
           <CountUp
             start={0}
             end={579}
             duration={2}
-            className="text-4xl font-bold text-red"
+            className="text-4xl font-bold text-orange"
           />
           <p className="text-gray-700 mt-4 text-center">
-            Children attend weekly reading sessions.
+            Children attend weekly reading sessions .
           </p>
         </div>
 
         {/* Membership Increase */}
         <div className="flex flex-col items-center justify-center p-6 hover:scale-110 transform transition-all duration-300">
-          <FaStar className="text-6xl text-orange mb-4" />
+          <FaStar className="text-4xl text-orange mb-4" />
           <CountUp
             start={0}
             end={148.7}
             decimals={1}
             duration={2}
-            className="text-4xl font-bold text-red"
+            className="text-4xl font-bold text-orange"
           />
           <p className="text-gray-700 mt-4 text-center">
             Percentage increase in reading club membership since 2023.
@@ -169,31 +174,31 @@ const QuickStats = () => {
 
         {/* Attendance Increase */}
         <div className="flex flex-col items-center justify-center p-6 hover:scale-110 transform transition-all duration-300">
-          <FaUserFriends className="text-6xl text-orange mb-4" />
+          <FaUserFriends className="text-4xl text-orange mb-4" />
           <CountUp
             start={0}
             end={34.99}
             decimals={2}
             duration={2}
-            className="text-4xl font-bold text-red"
+            className="text-4xl font-bold text-orange"
           />
           <p className="text-gray-700 mt-4 text-center">
-            Percentage increase in reading club attendance.
+            Percentage increase in reading club attendance over the period.
           </p>
         </div>
 
         {/* Female Participation */}
         <div className="flex flex-col items-center justify-center p-6 hover:scale-110 transform transition-all duration-300">
-          <FaVenus className="text-6xl text-orange mb-4" />
+          <FaVenus className="text-4xl text-orange mb-4" />
           <CountUp
             start={0}
             end={300}
             duration={2}
-            className="text-4xl font-bold text-red"
+            className="text-4xl font-bold text-orange"
           />
           {/* <p className="text-4xl font-bold text-red">More Females</p> */}
           <p className="text-gray-700 mt-4 text-center">
-            More female children are involved in the reading clubs than males.
+            More female children are involved in the reading clubs.
           </p>
         </div>
       </div>
