@@ -64,7 +64,7 @@ const VSLA = () => {
   return (
     <section
       id="pdaafrica"
-      className="max-container w-full min-h-screen font-poppins"
+      className="max-container max-w-full min-h-screen font-poppins"
     >
       <div className="mt-26 ">
         <div
@@ -86,7 +86,7 @@ const VSLA = () => {
           </div>
         </div>
 
-        <div className="py-16 bg-gray-100">
+        <div className="py-16 bg-gray-100 ">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-red">Who We Are</h2>
             <p className="text-lg text-gray-700">
@@ -110,7 +110,7 @@ const VSLA = () => {
           </div>
         </div>
 
-        <div className="py-16 bg-white">
+        <div className="py-16 bg-white mx-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-red">
               Our VSLA+ Model
@@ -127,7 +127,7 @@ const VSLA = () => {
               <img
                 src={modul}
                 alt="VSLA+ Model Infographic"
-                className="mx-auto shadow-lg rounded-lg"
+                className="mx-auto max-sm:w-auto shadow-lg rounded-lg"
               />
               <p className="text-gray-600 mt-4">
                 The VSLA+ model incorporates interventions such as financial
@@ -138,14 +138,16 @@ const VSLA = () => {
           </div>
         </div>
 
-        <div className="py-16">
+        <div className="py-16 mx-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-red">
               Our Impact and Partnerships
             </h2>
             <p className="text-lg text-gray-700">
-              PDA adopts a unique integrated VSLA (VSLA+) model as a
-              self-facilitated platform...
+              PDA has a proven track record of partnering with communities and
+              other development organizations to implement large-scale
+              development interventions in promoting ethical and transparent
+              commodity supply chains and communities over the last 21 years.
             </p>
 
             <div className="flex overflow-hidden group justify-center">
@@ -172,9 +174,9 @@ const VSLA = () => {
         </div>
 
         <div className="py-16 bg-gray-100">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-5xl max-md:max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-red">Our Projects</h2>
-            <div className="vslacard grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="vslacard grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16 md:gap-16 max-sm:px-20 md:px-14">
               <ProjectCard
                 title="Nestle Income Accelerator Programme [Cote D’Ivoire]"
                 description="Improving the livelihoods of cocoa-farming families through VSLA groups and Gender Action Learning Systems (GALS) training."

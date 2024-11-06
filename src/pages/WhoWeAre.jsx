@@ -9,7 +9,7 @@ const WhoWeAre = () => {
   return (
     <section
       id="whoweare"
-      className="max-container w-full min-h-screen lg:justify-center flex flex-col"
+      className="max-container max-w-full w-full min-h-screen lg:justify-center flex flex-col"
     >
       <div className="mt-24 relative w-full">
         <img src={whoweare} className="w-[100vw] h-auto object-cover" alt="" />

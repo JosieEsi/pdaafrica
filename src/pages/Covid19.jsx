@@ -7,7 +7,7 @@ const Covid19 = () => {
   return (
     <section
       id="child-abuse-tracker"
-      className="max-container w-full min-h-screen"
+      className="max-container max-w-full w-full min-h-screen"
     >
       <div className="mt-24 w-full">
         <img src={covid} alt="" className="w-full" />

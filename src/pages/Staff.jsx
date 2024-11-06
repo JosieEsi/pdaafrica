@@ -371,7 +371,10 @@ import { annabelle, alex, ampah, edem, kamil, raymond } from "../assets/images";
 
 const Staff = () => {
   return (
-    <section id="staff" className="max-container w-full min-h-screen">
+    <section
+      id="staff"
+      className="max-container max-w-full w-full min-h-screen"
+    >
       {/* Title Section */}
       <div className="mt-28 text-center">
         <h1 className="font-poppins font-bold text-4xl text-orange mb-16">

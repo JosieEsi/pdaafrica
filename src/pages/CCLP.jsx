@@ -181,7 +181,7 @@ const CCLP = () => {
   return (
     <section
       id="pdaafrica"
-      className="max-container w-full min-h-screen bg-white"
+      className="max-container max-w-full w-full min-h-screen bg-white   justify-center"
     >
       {/* Hero Section */}
       {/* <div className="mt-28 text-center animate-fade-in">
@@ -225,17 +225,17 @@ const CCLP = () => {
       <QuickStats />
 
       {/* Project Components Section */}
-      <div className="py-12 ">
-        <h2 className="font-poppins font-semibold text-2xl text-center text-red mb-8">
+      <div className="pt-5 ">
+        <h2 className="font-poppins font-semibold text-2xl text-center text-red mb-8 justify-center">
           Project Objectives
         </h2>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <img
             src={library}
             alt="Reading Festival"
-            className="mx-auto mt-8 rounded-lg shadow-lg w-full h-3/5 md:w-8/12 animate-slide-in"
+            className="mx-auto rounded-lg shadow-lg w-11/12 md:w-8/12 mb-10"
           />
-          <div className="px-4 ml-10 pt-14 animate-slide-in">
+          <div className="px-4 ml-10 max-lg:ml-20 animate-slide-in max-sm:ml-5 max-lg:mt-10 mb-5">
             <ul className="list-disc list-inside text-gray-700 leading-relaxed font-poppins">
               <li className="flex items-center">
                 <FaSchool className="mr-2 text-orange" /> Renovation of 2
@@ -271,8 +271,8 @@ const CCLP = () => {
         <h2 className="font-poppins font-semibold text-2xl text-center text-red mb-8">
           Rationale for Reading Festival & Competitions
         </h2>
-        <div className="grid grid-cols-2">
-          <div className="px-4 ml-20 pt-5 animate-slide-in ">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="px-4 ml-20 max-sm:ml-5 pt-5 animate-slide-in ">
             <ul className="list-disc list-inside text-gray-700 leading-8 font-poppins">
               <li>
                 Ignite the interest of children toward reading and a love for
@@ -301,7 +301,7 @@ const CCLP = () => {
 
       {/* Reading Competition Flow Section */}
       <div className="py-12">
-        <h2 className="font-poppins font-semibold text-3xl text-center text-red mb-8">
+        <h2 className="font-poppins font-semibold text-3xl text-center text-red mb-8 mx-auto">
           Reading Festival & Competitions Structure
         </h2>
         <div className="max-w-5xl mx-auto">

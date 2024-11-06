@@ -372,10 +372,10 @@ const Dashboard = () => {
   };
 
   return (
-    <section className="flex min-h-screen max-container mt-24">
+    <section className="flex min-h-screen max-container mt-24 font-poppins">
       {/* Sidebar */}
       <aside
-        className={`bg-orange p-4 ${
+        className={`bg-gray-100 p-4 ${
           sidebarOpen ? "w-64" : "w-20"
         } max-sm:w-24 md:${sidebarOpen ? "w-48" : "w-16"} lg:${
           sidebarOpen ? "w-64" : "w-20"
@@ -385,31 +385,62 @@ const Dashboard = () => {
           <ul>
             <li className="text-white">
               <button onClick={toggleSidebar}>
-                <img src={sidebar} alt="sidebar" className="w-10 h-10 " />
+                <img src={sidebar} alt="sidebar" className="w-8 h-8 " />
               </button>
             </li>
             <ul className="mt-6">
-              {[1, 2, 3].map((i) => (
+              {[1].map((i) => (
                 <li key={i} className="mb-4">
                   <a
                     href="#"
-                    className="py-2 hover:bg-white"
+                    className="py-2 hover:bg-orange hover:text-white text-orange"
                     onClick={() => handleDropdownClick(i)}
                   >
-                    Menu {i}
+                    Analytics
                   </a>
                   {activeDropdown === i && (
                     <div className="pl-4 mt-2">
-                      <a href="#" className="block py-1 px-2 hover:bg-white ">
-                        Submenu 1
+                      <a
+                        href="https://app.powerbi.com/groups/me/reports/0676b2fd-7dd2-4907-a521-d8dcb6e12fc2/e04e05acc28c439095c8?experience=power-bi"
+                        className="block py-1 px-2 hover:bg-red  hover:text-white"
+                      >
+                        VSLA
                       </a>
-                      <a href="#" className="block py-1 px-2 hover:bg-white">
-                        Submenu 2
+                      <a
+                        href="#"
+                        className="block py-1 px-2 hover:bg-red  hover:text-white"
+                      >
+                        Child Labour
+                      </a>
+                      <a
+                        href="https://app.powerbi.com/groups/me/reports/2f0c1f4f-2c7b-44e8-b00b-f3847e7d51e6/cd3c0f38fb65155631d3?experience=power-bi"
+                        className="block py-1 px-2 hover:bg-red  hover:text-white"
+                      >
+                        Community Reading
                       </a>
                     </div>
                   )}
                 </li>
               ))}
+              <li className="mb-4">
+                <a
+                  href="#"
+                  className="py-2 hover:bg-orange hover:text-white text-orange"
+                >
+                  Charts
+                </a>
+              </li>
+              {/* <li class="divider" data-text="table">
+                Table
+              </li> */}
+              <li className="mb-4">
+                <a
+                  href="#"
+                  className="py-2  hover:bg-orange hover:text-white text-orange"
+                >
+                  Tables
+                </a>
+              </li>
             </ul>
           </ul>
         </nav>

@@ -216,7 +216,7 @@ import {
   FaHandsHelping,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import { slide } from "../assets/images";
+import { slide, nyomodul } from "../assets/images";
 
 const successStories = [
   "“Joining the VSLA group has helped me save for my children’s education.” – Cocoa Farmer",
@@ -245,7 +245,7 @@ const Nyonkopa = () => {
   return (
     <section
       id="pdaafrica"
-      className="max-container w-full min-h-screen font-poppins"
+      className="max-container max-w-full w-full min-h-screen font-poppins"
     >
       {/* Hero Section with Video */}
       <div className="relative h-[550px] overflow-hidden">
@@ -332,6 +332,18 @@ const Nyonkopa = () => {
         </div>
       </section>
 
+      {/* Module */}
+      <section className="py-16 px-8 bg-white text-center">
+        <h2 className="text-3xl font-bold text-red">Get Involved</h2>
+        <p className="mt-6 text-gray-700">
+          Support the Nyonkopa Child Labor Remediation Project by partnering
+          with us or offering assistance.
+        </p>
+        <div className="flex justify-center pt-10">
+          <img src={nyomodul} alt="module" className="max-w-4xl   " />
+        </div>
+      </section>
+
       {/* Map Section */}
       <section className="py-16 px-8 bg-white text-center">
         <h2 className="text-3xl font-bold text-red">Project Coverage</h2>
@@ -366,16 +378,21 @@ const Nyonkopa = () => {
       </section>
 
       {/* Get Involved Section */}
-      <section className="py-16 px-8 bg-white text-center">
+
+      {/* <section className="py-16 px-8 bg-white text-center">
         <h2 className="text-3xl font-bold text-red">Get Involved</h2>
         <p className="mt-6 text-gray-700">
           Support the Nyonkopa Child Labor Remediation Project by partnering
           with us or offering assistance.
         </p>
+        <img
+          src={nyomodul}
+          alt="module"
+          className="w-96 h-96  "
+        />
         <button className="mt-8 px-6 py-3 bg-orange text-white font-bold rounded-full hover:bg-orange">
           Contact Us
-        </button>
-      </section>
+        </button> */}
     </section>
   );
 };

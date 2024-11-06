@@ -18,7 +18,7 @@ const HomeSlider = () => {
   };
 
   return (
-    <div className="w-full max-container ">
+    <div className="w-full max-container font-poppins ">
       <Slider {...settings}>
         {/* Display images */}
         {imageArray.map((image, index) => (

@@ -6,7 +6,7 @@ const ChildAbuseTracker = () => {
   return (
     <section
       id="child-abuse-tracker"
-      className="max-container w-full min-h-screen"
+      className="max-container max-w-full w-full min-h-screen"
     >
       <div className="mt-24 bg-gray-200 w-full h-32 flex items-center justify-between px-40">
         <h1 className="font-poppins font-bold text-3xl  ">

@@ -34,7 +34,7 @@ const Teams = () => {
   return (
     <section
       id="teams"
-      className="max-container w-full min-h-screen flex justify-center items-center flex-col mb-20"
+      className="max-container max-w-full w-full min-h-screen flex justify-center items-center flex-col mb-20"
     >
       {/* PDA Africa Team */}
       <div className="mt-28 flex flex-col ">

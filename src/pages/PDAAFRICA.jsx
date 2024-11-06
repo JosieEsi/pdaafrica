@@ -3,7 +3,10 @@ import HomeSlider from "../components/HomeSlider";
 
 const PDAAFRICA = () => {
   return (
-    <section id="pdaafrica" className="max-container w-full">
+    <section
+      id="pdaafrica"
+      className="max-container max-w-full w-full font-poppins"
+    >
       <div>
         <HomeSlider />
         {/* <iframe

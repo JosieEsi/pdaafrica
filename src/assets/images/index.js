@@ -106,6 +106,7 @@ import slide from "./slidernynkopa.mp4";
 import modul from "./modul.jpg";
 import finan from "./finan.jpg";
 import library from "./library.jpg";
+import nyomodul from "./nyomodul.jpg";
 
 export {
   image1,
@@ -207,4 +208,5 @@ export {
   modul,
   finan,
   library,
+  nyomodul,
 };

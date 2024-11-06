@@ -7,7 +7,7 @@ const EthicalReviewCommittee = () => {
   return (
     <section
       id="ethical-review-committee"
-      className="max-container w-full min-h-screen"
+      className="max-container max-w-full w-full min-h-screen"
     >
       <div className="mt-24 relative w-full bg-cover">
         <img src={ethical} alt="" className="w-full h-auto object-cover " />

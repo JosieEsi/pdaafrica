@@ -86,14 +86,14 @@ const Projects = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <button
           className="bg-orange text-white py-4 px-6 rounded-lg hover:bg-red text-lg font-poppins"
           onClick={handleDashboardClick} // Handle button click
         >
           DASHBOARD
         </button>
-      </div>
+      </div> */}
       {activeForm && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-50">
           <div className="bg-white p-8 rounded-lg">
