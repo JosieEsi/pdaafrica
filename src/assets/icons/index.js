@@ -35,6 +35,7 @@ import puzzle from "./puzzle.svg";
 import arrow from "./Vector 1.svg";
 import line from "./Line 15.svg";
 import line2 from "./Line 18.svg";
+import clipboard from "./clipboard.png";
 
 export {
   arrowLeft,
@@ -73,4 +74,5 @@ export {
   arrow,
   line,
   line2,
+  clipboard,
 };

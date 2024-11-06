@@ -48,7 +48,10 @@ const WhoWeAre = () => {
           </p>
         </div>
       </div>
-      <div className="bg-gray-200 lg:w-[45rem] max-sm:w-[20rem] md:w-[35rem] rounded-lg h-48 mb-10 lg:ml-[470px] flex flex-row px-10 py-10 max-sm:ml-8 md:ml-32">
+      <section
+        id="vision"
+        className="bg-gray-200 lg:w-[45rem] max-sm:w-[20rem] md:w-[35rem] rounded-lg h-48 mb-10 lg:ml-[470px] flex flex-row px-10 py-10 max-sm:ml-8 md:ml-32"
+      >
         <div className="flex flex-col w-full">
           <img src={peak} alt="" className="h-20 w-20" />
 
@@ -62,8 +65,11 @@ const WhoWeAre = () => {
           sex, race, ethnicity, creed, age or disability, can realise their full
           potential and contribute their best to the common good.
         </p>
-      </div>
-      <div className="bg-gray-200 lg:w-[45rem] max-sm:w-[20rem] md:w-[35rem] rounded-lg h-48 mb-10 lg:ml-[470px] flex flex-row px-10 py-10 max-sm:ml-8 md:ml-32">
+      </section>
+      <section
+        id="mission"
+        className="bg-gray-200 lg:w-[45rem] max-sm:w-[20rem] md:w-[35rem] rounded-lg h-48 mb-10 lg:ml-[470px] flex flex-row px-10 py-10 max-sm:ml-8 md:ml-32"
+      >
         <div className="flex flex-col w-full">
           <img src={dart} alt="" className="h-20 w-20" />
 
@@ -76,7 +82,7 @@ const WhoWeAre = () => {
           to facilitate the participation of all people towards taking greater
           control over their own lives and determining their own destiny.
         </p>
-      </div>
+      </section>
       <div className="flex w-full padding lg:ml-60 md:ml-32 max-sm:ml-16">
         <div className="flex flex-row lg:gap-10 md:gap-5 max-sm:gap-2">
           <div className=" bg-orange rounded-[45px] w-36 h-24 flex items-center justify-center">

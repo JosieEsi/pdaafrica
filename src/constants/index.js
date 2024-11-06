@@ -80,8 +80,8 @@ export const navigation = [
     title: "Who we are",
     link: "/who-we-are",
     links: [
-      { name: "Vision", link: "#vision" },
-      { name: "Mission", link: "#mission" },
+      { name: "Vision", link: "/who-we-are#vision" },
+      { name: "Mission", link: "/who-we-are#mission" },
       { name: "Teams", link: "/teams" },
       { name: "Board", link: "/board" },
       { name: "Staff", link: "/staff" },
@@ -90,11 +90,11 @@ export const navigation = [
 
   {
     title: "What we do",
-    link: "/",
+    link: "/what-we-do",
     links: [
-      { name: "Strategic Themes", link: "#strategic-themes" },
-      { name: "Our Projects", link: "#our-projects" },
-      { name: "Expertise", link: "#expertise" },
+      { name: "Strategic Themes", link: "/what-we-do#strategic-themes" },
+      { name: "Our Projects", link: "/what-we-do#our-projects" },
+      { name: "Expertise", link: "/what-we-do#expertise" },
     ],
   },
 
@@ -112,11 +112,11 @@ export const navigation = [
 
   {
     title: "Impact",
-    link: "/",
+    link: "/our-impact",
     links: [
-      { name: "Impact Stories", link: "#impact-stories" },
-      { name: "Documentaries", link: "#documentaries" },
-      { name: "Case Studies", link: "#case-studies" },
+      { name: "Impact Stories", link: "/our-impact#impact-stories" },
+      { name: "Documentaries", link: "/our-impact#documentaries" },
+      { name: "Case Studies", link: "/our-impact#case-studies" },
     ],
   },
 ];

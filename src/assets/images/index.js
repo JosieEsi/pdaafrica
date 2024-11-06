@@ -107,6 +107,9 @@ import modul from "./modul.jpg";
 import finan from "./finan.jpg";
 import library from "./library.jpg";
 import nyomodul from "./nyomodul.jpg";
+import strategic from "./strategic.jpg";
+import farmer from "./farmer.jpg";
+import obuasi from "./obuasi.jpg";
 
 export {
   image1,
@@ -209,4 +212,7 @@ export {
   finan,
   library,
   nyomodul,
+  strategic,
+  farmer,
+  obuasi,
 };

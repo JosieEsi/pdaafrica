@@ -12,11 +12,13 @@ import CCLP from "./pages/CCLP.jsx";
 import Nyonkopa from "./pages/Nyonkopa.jsx";
 import VSLA from "./pages/VSLA.jsx";
 import WhoWeAre from "./pages/WhoWeAre.jsx";
+import WhatWeDo from "./pages/WhatWeDo.jsx";
 import EthicalReviewCommittee from "./pages/EthicalReviewCommittee.jsx";
 import Staff from "./pages/Staff.jsx";
 import Teams from "./pages/Teams.jsx";
 import ChildAbuseTracker from "./pages/ChildAbuseTracker.jsx";
 import Covid19 from "./pages/Covid19.jsx";
+import OurImpact from "./pages/OurImpact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +60,14 @@ const router = createBrowserRouter([
       {
         path: "/who-we-are",
         element: <WhoWeAre />,
+      },
+      {
+        path: "/what-we-do",
+        element: <WhatWeDo />,
+      },
+      {
+        path: "/our-impact",
+        element: <OurImpact />,
       },
       {
         path: "/staff",
