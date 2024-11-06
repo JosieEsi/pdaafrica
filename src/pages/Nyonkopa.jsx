@@ -334,13 +334,13 @@ const Nyonkopa = () => {
 
       {/* Module */}
       <section className="py-16 px-8 bg-white text-center">
-        <h2 className="text-3xl font-bold text-red">Get Involved</h2>
+        <h2 className="text-3xl font-bold text-red">Project Module</h2>
         <p className="mt-6 text-gray-700">
-          Support the Nyonkopa Child Labor Remediation Project by partnering
-          with us or offering assistance.
+          PDA uses a four-level broad child labour remediation model that uses
+          an integrated participatory approach and facilitation methodologies.
         </p>
         <div className="flex justify-center pt-10">
-          <img src={nyomodul} alt="module" className="max-w-4xl   " />
+          <img src={nyomodul} alt="module" className="max-w-2xl   " />
         </div>
       </section>
 
