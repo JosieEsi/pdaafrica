@@ -306,8 +306,9 @@ const CCLP = () => {
         </h2>
         <div className="max-w-5xl mx-auto">
           <p className="text-gray-700 text-center mb-8 font-poppins">
-            Schools within clusters 'A' and 'B' compete for the Reading Champion
-            position, inspiring students to achieve excellence in literacy.
+            Reading clubs within clusters 'A' and 'B' compete for the Reading
+            Champion position, inspiring students to achieve excellence in
+            literacy.
           </p>
 
           <div className="mt-8">
