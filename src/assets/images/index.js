@@ -84,7 +84,7 @@ import rand8 from "./rand8.jpg";
 import rand9 from "./rand9.jpg";
 import competition from "./competition.jpg";
 import reading from "./reading.jpg";
-import cluster from "./cluster.png";
+import cluster from "./cluster.jpg";
 import whoweare from "./whoweare.png";
 import ethical from "./ethical.png";
 import eleanor from "./dr_eleanor_hill 1.png";
