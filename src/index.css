@@ -212,6 +212,50 @@ body {
     }
   }
 
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
 
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
+
+  .text-shadow-md {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+
+  .custom-description {
+    font-family: 'Courier New', Courier, monospace;
+    /* Custom font style */
+    font-style: italic;
+    /* Italics for a distinct style */
+    text-shadow: 1px 1px 4px rgba(255, 165, 0, 0.7);
+    /* Subtle orange glow */
+    letter-spacing: 1.5px;
+    /* Adds spacing for a refined look */
+  }
 
 }

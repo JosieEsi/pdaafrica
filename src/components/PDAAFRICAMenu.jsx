@@ -490,6 +490,7 @@ import { pdaLogo } from "../assets/images";
 import { africaLinks } from "../constants";
 import DonateForm from "./DonateForm";
 import { Link } from "react-router-dom";
+import { pdaafricalogo } from "../assets/icons";
 
 const PDAAFRICAMenu = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -512,13 +513,13 @@ const PDAAFRICAMenu = () => {
     <header className="w-full h-24 fixed top-0 left-0 z-50">
       <div className="w-full h-3 bg-orange relative z-10"></div>
       <nav className="max-w-full shadow-3xl bg-white flex justify-around items-center relative z-10">
-        <a href="/">
+        <a href="/pdaafrica">
           <img
-            className="pt-3 pb-3"
-            src={pdaLogo}
+            className=""
+            src={pdaafricalogo}
             alt="Logo"
-            width={150}
-            height={40}
+            width={90}
+            height={5}
           />
         </a>
 

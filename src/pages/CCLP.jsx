@@ -202,7 +202,7 @@ const CCLP = () => {
         </div>
       </div> */}
       <div
-        className="relative w-full h-screen bg-cover bg-center"
+        className="relative w-full bg-cover bg-center h-screen"
         style={{ backgroundImage: `url(${reading})` }}
       >
         {/* Optional Overlay for Text Visibility */}
@@ -212,7 +212,7 @@ const CCLP = () => {
         <div className="relative flex items-end justify-center h-full pb-12 text-center animate-fade-in">
           <div className="text-white">
             <h1 className="font-poppins font-bold text-6xl text-orange">
-              Cocoa Communities Library Project
+              Cocoa Communities' Library Project
             </h1>
             <p className="text-xl mt-4 mb-5 font-poppins">
               Improving reading literacy among children in cocoa growing

@@ -216,7 +216,7 @@ import {
   FaHandsHelping,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import { slide, nyomodul } from "../assets/images";
+import { slide, nyomodul, nyonk } from "../assets/images";
 
 const successStories = [
   "“Joining the VSLA group has helped me save for my children’s education.” – Cocoa Farmer",
@@ -248,14 +248,21 @@ const Nyonkopa = () => {
       className="max-container max-w-full w-full min-h-screen font-poppins"
     >
       {/* Hero Section with Video */}
-      <div className="relative h-[550px] overflow-hidden">
+      {/* <div className="relative h-[550px] overflow-hidden">
         <video
           autoPlay
           loop
           muted
           className="absolute inset-0 w-full h-full object-cover"
           src={slide}
+          poster="rand7"
         />
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
+      <div
+        className="relative w-full h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${nyonk})` }}
+      >
+        {/* Optional Overlay for Text Visibility */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative flex items-end justify-center h-full text-center text-white">
           <div>
@@ -306,7 +313,7 @@ const Nyonkopa = () => {
         <div className="mt-8 flex flex-wrap justify-center gap-12">
           <div className="text-center max-w-xs">
             <h3 className="font-bold text-xl text-orange">
-              Remediation Process Oversight
+              Remediation Process
             </h3>
             <p className="text-gray-700 mt-4">
               Oversee the remediation process for children involved in labor.
@@ -340,7 +347,11 @@ const Nyonkopa = () => {
           an integrated participatory approach and facilitation methodologies.
         </p>
         <div className="flex justify-center pt-10">
-          <img src={nyomodul} alt="module" className="max-w-2xl   " />
+          <img
+            src={nyomodul}
+            alt="module"
+            className="mx-auto rounded-lg shadow-lg w-11/12 md:w-8/12  "
+          />
         </div>
       </section>
 

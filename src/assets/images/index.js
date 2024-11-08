@@ -110,6 +110,13 @@ import nyomodul from "./nyomodul.jpg";
 import strategic from "./strategic.jpg";
 import farmer from "./farmer.jpg";
 import obuasi from "./obuasi.jpg";
+import publication from "./publication.jpg";
+import business from "./business.jpg";
+import yfutures from "./yfutures.jpg";
+import glasses from "./public.jpg";
+import kodu from "./kodu.jpg";
+import podpic from "./podpic.jpg";
+import nyonk from "./nyonk.jpg";
 
 export {
   image1,
@@ -215,4 +222,11 @@ export {
   strategic,
   farmer,
   obuasi,
+  publication,
+  business,
+  yfutures,
+  glasses,
+  kodu,
+  podpic,
+  nyonk,
 };

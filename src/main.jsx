@@ -19,6 +19,9 @@ import Teams from "./pages/Teams.jsx";
 import ChildAbuseTracker from "./pages/ChildAbuseTracker.jsx";
 import Covid19 from "./pages/Covid19.jsx";
 import OurImpact from "./pages/OurImpact.jsx";
+import Publications from "./pages/Publications.jsx";
+import VidPic from "./pages/VidPic.jsx";
+import Podcast from "./pages/Podcast.jsx";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +71,18 @@ const router = createBrowserRouter([
       {
         path: "/our-impact",
         element: <OurImpact />,
+      },
+      {
+        path: "/publications",
+        element: <Publications />,
+      },
+      {
+        path: "/videos-pictures",
+        element: <VidPic />,
+      },
+      {
+        path: "/podcast",
+        element: <Podcast />,
       },
       {
         path: "/staff",

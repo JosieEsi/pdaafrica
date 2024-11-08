@@ -100,13 +100,13 @@ export const navigation = [
 
   {
     title: "Resources",
-    link: "/",
+    link: "#",
     links: [
-      { name: "Publications", link: "#publications" },
-      { name: "Podcast", link: "#podcast" },
-      { name: "Vodcast", link: "#vodcast" },
-      { name: "Videos", link: "#videos" },
-      { name: "Photos", link: "#photos" },
+      { name: "Publications", link: "/publications" },
+      { name: "Podcast", link: "/podcast" },
+      { name: "Vodcast", link: "/vodcast" },
+      { name: "Videos", link: "/videos-pictures" },
+      { name: "Photos", link: "/videos-pictures" },
     ],
   },
 
@@ -397,19 +397,21 @@ export const imageArray = [
     alt: "Image 3",
     title: "",
     description:
-      "We view communities as agents of change and development partners, rather than as mere receivers of public and private goods and services or objects of charity",
+      "We view communities as agents of change and development partners",
   },
   {
     src: Image4,
     alt: "Image 4",
     title: "",
-    description: "",
+    description:
+      "We support local governance and, for that matter, decentralization programs",
   },
   {
     src: Image5,
     alt: "Image 5",
     title: "",
-    description: "",
+    description:
+      "We enhance local capacity through local level coordination, training, facilitation and technical support",
   },
 ];
 

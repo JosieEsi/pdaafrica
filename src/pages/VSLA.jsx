@@ -1,5 +1,5 @@
 import React from "react";
-import { modul } from "../assets/images";
+import { modul, obuasi } from "../assets/images";
 import {
   beyond,
   cocoa,
@@ -68,8 +68,8 @@ const VSLA = () => {
     >
       <div className="mt-26 ">
         <div
-          className="relative bg-cover bg-center h-[550px]"
-          style={{ backgroundImage: `url(${finan})` }}
+          className="relative bg-cover bg-center h-screen"
+          style={{ backgroundImage: `url(${obuasi})` }}
         >
           <div className="bg-black bg-opacity-50 h-full flex items-end justify-center">
             <div className="text-center text-orange">

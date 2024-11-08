@@ -38,7 +38,7 @@ const OurImpact = () => {
           pariatur.
         </p>
       </div>
-      <section className="impact-stories">
+      <section id="impact-stories">
         <div className="flex ml-32 mb-10">
           <Tab label="Impact Stories" />
         </div>
@@ -69,7 +69,7 @@ const OurImpact = () => {
         </div>
         <div className="w-[600px] h-1 bg-orange  ml-96 mb-10"></div>
       </section>
-      <section className="documentaries">
+      <section id="documentaries">
         <div className="flex ml-32 mb-10">
           <Tab label="Documentary" />
         </div>
@@ -100,7 +100,7 @@ const OurImpact = () => {
         </div>
         <div className="w-[600px] h-1 bg-orange  ml-96 mb-10"></div>
       </section>
-      <section className="case-studies">
+      <section id="case-studies">
         <div className="flex ml-32 mb-10">
           <Tab label="Case Studies" />
         </div>

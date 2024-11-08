@@ -36,6 +36,10 @@ import arrow from "./Vector 1.svg";
 import line from "./Line 15.svg";
 import line2 from "./Line 18.svg";
 import clipboard from "./clipboard.png";
+import pic from "./pict.png";
+import vid from "./vid.png";
+import micro from "./micro.png";
+import pdaafricalogo from "./pdaafricalogo.png";
 
 export {
   arrowLeft,
@@ -75,4 +79,8 @@ export {
   line,
   line2,
   clipboard,
+  pic,
+  micro,
+  vid,
+  pdaafricalogo,
 };

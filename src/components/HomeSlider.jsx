@@ -18,25 +18,46 @@ const HomeSlider = () => {
   };
 
   return (
-    <div className="w-full max-container font-poppins ">
+    <div className="w-full max-container font-poppins mt-20 max-w-full">
       <Slider {...settings}>
         {/* Display images */}
         {imageArray.map((image, index) => (
-          <div key={index} className="relative w-full h-[550px]">
+          <div key={index} className="relative w-full ">
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-full object-cover"
+              className="w-full h-[500px] object-cover"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-center text-white p-5">
-              <h2 className="text-4xl font-bold mb-4">{image.title}</h2>
-              <p className="text-lg">{image.description}</p>
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-center text-white p-5 font-poppins">
+              <h2 className="text-4xl font-bold mb-4 animate-fade-in text-shadow-md">
+                {image.title}
+              </h2>
+              {/* <p
+                className="text-2xl font-semibold text-center text-orange animate-slide-up opacity-0 custom-description"
+                key={index}
+              > */}
+              <p
+                className={`text-2xl font-semibold text-center text-shadow-md ${
+                  index === 0
+                    ? "text-orange" // Custom style for the first slide
+                    : index === 1
+                    ? "text-orange italic font-semibold " // Style for second slide
+                    : index === 2
+                    ? "text-red text-3xl tracking-widest font-extrabold " // Style for third slide
+                    : index === 3
+                    ? "text-white font-medium italic " // Style for fourth slide
+                    : "text-ellipsis  font-bold" // Style for fifth slide
+                } animate-slide-up opacity-0`}
+                key={`${index}-desc`} // Forces re-render on each slide load
+              >
+                {image.description}
+              </p>
             </div>
           </div>
         ))}
 
         {/* Display first iframe */}
-        <div className="w-full h-[550px] flex items-center justify-center pt-28  ">
+        {/* <div className="w-full h-[550px] flex items-center justify-center pt-28  ">
           <iframe
             title="IA VSLA"
             width="100%"
@@ -47,10 +68,10 @@ const HomeSlider = () => {
             allowFullScreen
           ></iframe>
           <img src={picture2} alt="" />
-        </div>
+        </div> */}
 
         {/* Display second iframe */}
-        <div className="w-full h-[550px] flex items-center justify-center pt-28">
+        {/* <div className="w-full h-[550px] flex items-center justify-center pt-28">
           <iframe
             title="Community Reading"
             width="100%"
@@ -60,7 +81,7 @@ const HomeSlider = () => {
             frameBorder="0"
             allowFullScreen
           ></iframe>
-        </div>
+        </div> */}
       </Slider>
     </div>
   );
