@@ -372,7 +372,10 @@ const Dashboard = () => {
   };
 
   return (
-    <section className="flex min-h-screen max-container mt-24 font-poppins">
+    <section
+      id="data-analytics"
+      className="flex min-h-screen max-container mt-24 font-poppins"
+    >
       {/* Sidebar */}
       <aside
         className={`bg-gray-100 p-4 ${

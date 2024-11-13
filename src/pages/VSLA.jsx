@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "react-slick";
 import { modul, obuasi } from "../assets/images";
 import {
   beyond,
@@ -24,6 +25,29 @@ import {
 //     <p className="text-gray-500">Field Officers: {officers}</p>
 //   </div>
 // );
+
+const successStories = [
+  "“Joining the VSLA group has helped me save for my children’s education.” – Cocoa Farmer",
+  "“With the project’s support, I now understand the importance of keeping my children in school.” – Parent",
+  "“The training sessions have changed our approach to child labor.” – Community Leader",
+];
+
+const SuccessStories = () => {
+  const settings = { dots: true, infinite: true, autoplay: true, speed: 500 };
+  return (
+    <section className="py-8 px-8 bg-gray-100 text-center">
+      <Slider {...settings}>
+        {successStories.map((story, index) => (
+          <div key={index} className="p-8">
+            <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+              <p className="text-orange">{story}</p>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </section>
+  );
+};
 
 const ProjectCard = ({ title, description, location, officers, text }) => (
   <div className="flip-card">
@@ -225,6 +249,15 @@ const VSLA = () => {
             </div>
           </div>
         </div>
+        {/* Success Stories Slider */}
+        <section className="py-16 px-8 bg-gray-100 text-center">
+          <h2 className="text-3xl font-bold text-red">Stories of Change</h2>
+          <p className="mt-6 text-gray-700">
+            Read about the real impact of our project on the lives of children
+            and families.
+          </p>
+          <SuccessStories />
+        </section>
       </div>
     </section>
   );

@@ -41,12 +41,12 @@ const HomeSlider = () => {
                   index === 0
                     ? "text-orange" // Custom style for the first slide
                     : index === 1
-                    ? "text-orange italic font-semibold " // Style for second slide
+                    ? "text-orange italic font-semibold max-sm:text-sm max-md:text-base" // Style for second slide
                     : index === 2
-                    ? "text-red text-3xl tracking-widest font-extrabold " // Style for third slide
+                    ? "text-red text-2xl font-extrabold max-sm:text-base max-md:text-lg  " // Style for third slide
                     : index === 3
-                    ? "text-white font-medium italic " // Style for fourth slide
-                    : "text-ellipsis  font-bold" // Style for fifth slide
+                    ? "text-white font-medium italic max-sm:text-sm max-md:text-base " // Style for fourth slide
+                    : "text-ellipsis  font-bold max-sm:text-sm max-md:text-base" // Style for fifth slide
                 } animate-slide-up opacity-0`}
                 key={`${index}-desc`} // Forces re-render on each slide load
               >

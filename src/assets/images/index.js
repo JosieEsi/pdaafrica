@@ -85,7 +85,7 @@ import rand9 from "./rand9.jpg";
 import competition from "./competition.jpg";
 import reading from "./reading.jpg";
 import cluster from "./cluster.jpg";
-import whoweare from "./whoweare.png";
+import whoweare from "./whoweare.jpg";
 import ethical from "./ethical.png";
 import eleanor from "./dr_eleanor_hill 1.png";
 import akosua from "./prof_Akosua 1.png";
