@@ -18,7 +18,7 @@ const HomeSlider = () => {
   };
 
   return (
-    <div className="w-full max-container font-poppins mt-20 max-w-full">
+    <div className="w-full max-container font-poppins mt-20 max-w-full ">
       <Slider {...settings}>
         {/* Display images */}
         {imageArray.map((image, index) => (
@@ -26,7 +26,7 @@ const HomeSlider = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-[500px] object-cover"
+              className="w-full h-[500px] wide:h-[800px] object-cover "
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-center text-white p-5 font-poppins">
               <h2 className="text-4xl font-bold mb-4 animate-fade-in text-shadow-md">

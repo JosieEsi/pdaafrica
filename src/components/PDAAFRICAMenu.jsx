@@ -494,20 +494,20 @@ import { pdaafricalogo } from "../assets/icons";
 
 const PDAAFRICAMenu = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
-  const [showDonateForm, setShowDonateForm] = useState(false); // State for showing donate form
+  //  const [showDonateForm, setShowDonateForm] = useState(false); // State for showing donate form
 
   const toggleNavigation = () => {
     setOpenNavigation(!openNavigation);
   };
 
-  const handleDonateClick = (isMobile = false) => {
-    setShowDonateForm(true); // Show donate form
-    if (isMobile) toggleNavigation(); // Only close the mobile menu if it's open
-  };
+  // const handleDonateClick = (isMobile = false) => {
+  //   setShowDonateForm(true); // Show donate form
+  //   if (isMobile) toggleNavigation(); // Only close the mobile menu if it's open
+  // };
 
-  const handleCloseDonateForm = () => {
-    setShowDonateForm(false); // Hide donate form
-  };
+  // const handleCloseDonateForm = () => {
+  //   setShowDonateForm(false); // Hide donate form
+  // };
 
   return (
     <header className="w-full h-24 fixed top-0 left-0 z-50">
@@ -538,12 +538,14 @@ const PDAAFRICAMenu = () => {
         </ul>
 
         {/* Large screen Donate button */}
-        <button
-          className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none max-lg:hidden"
-          onClick={() => handleDonateClick(false)} // Large screen donate logic
-        >
-          Donate now
-        </button>
+        <a href="/pdaafrica/donate">
+          <button
+            className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none max-lg:hidden"
+            onClick={() => handleDonateClick(false)} // Large screen donate logic
+          >
+            Donate now
+          </button>
+        </a>
 
         {/* Mobile menu button */}
         <div className="hidden max-lg:block">
@@ -583,34 +585,38 @@ const PDAAFRICAMenu = () => {
                 </Link>
               </li>
             ))}
-            <button
-              className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none"
-              onClick={() => handleDonateClick(true)} // Trigger donation on mobile
-            >
-              Donate now
-            </button>
+            <a href="/pdaafrica/donate">
+              <button
+                className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none"
+                onClick={() => handleDonateClick(true)} // Trigger donation on mobile
+              >
+                Donate now
+              </button>
+            </a>
           </ul>
         </div>
       </nav>
-
-      {/* Conditionally render the DonateForm */}
-      {showDonateForm && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-8 rounded-lg max-w-lg w-full relative">
-            <button
-              onClick={handleCloseDonateForm}
-              className="absolute top-4 right-4 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center"
-            >
-              ✕
-            </button>
-            {/* Only render the form content */}
-            <DonateForm />
-          </div>
-        </div>
-      )}
+      {/* Conditionally render the DonateForm -the entire code comes here*/}
     </header>
   );
 };
+
+/* Conditionally render the DonateForm */
+
+//   {showDonateForm && (
+// <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+//   <div className="bg-white p-8 rounded-lg max-w-lg w-full relative">
+//     <button
+//       onClick={handleCloseDonateForm}
+//       className="absolute top-4 right-4 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center"
+//     >
+//       ✕
+//     </button>
+
+//     <DonateForm />
+//   </div>
+// </div>
+//    )}
 
 export default PDAAFRICAMenu;
 

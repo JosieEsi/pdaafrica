@@ -38,7 +38,7 @@ export default {
         reach: "url('assets/images/reachout.jpg')",
       },
       screens: {
-        wide: "1440px",
+        wide: "1500px",
       },
     },
   },

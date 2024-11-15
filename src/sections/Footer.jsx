@@ -5,7 +5,11 @@ const Footer = () => {
   return (
     <footer className="max-container min-h-full ">
       <div className="flex flex-row justify-between">
-        <a href="https://pdaghana.com/">
+        <a
+          href="https://pdaghana.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={footerlogo} alt="logo" width={120} height={40} />
         </a>
         <div className="flex gap-5 flii">

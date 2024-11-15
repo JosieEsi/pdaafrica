@@ -428,7 +428,7 @@ export const africaLinks = [
 export const donateButton = [
   {
     label: "Donate now",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSeMejX4CP15Iex2bcOJqUK5Uwub8rlTQdyyDLRy204_YzVfYA/viewform?embedded=true",
+    link: "/pdaafrica/donate",
   },
 ];
 

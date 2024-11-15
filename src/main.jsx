@@ -57,7 +57,7 @@ const router = createBrowserRouter([
         element: <DonateForm />,
       },
       {
-        path: "/thank-you", // Route for the thank-you page after donation
+        path: "/pdaafrica/thank-you", // Route for the thank-you page after donation
         element: <ThankYouPage />,
       },
       {
